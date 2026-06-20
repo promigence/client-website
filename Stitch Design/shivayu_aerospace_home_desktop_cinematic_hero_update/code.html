@@ -1,0 +1,380 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>SHIVAYU AEROSPACE | Precision Engineering for the Future of Flight</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&amp;family=Inter:wght@400;500&amp;family=JetBrains+Mono:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<style>
+        body {
+            background-color: #0A192F;
+            background-image: radial-gradient(#112240 1px, transparent 1px);
+            background-size: 32px 32px;
+            color: #e1e3e4;
+        }
+        .technical-grid {
+            mask-image: linear-gradient(to bottom, black 50%, transparent 100%);
+        }
+        .glass-card {
+            background: rgba(17, 34, 64, 0.8);
+            backdrop-filter: blur(8px);
+            border: 1px solid rgba(192, 192, 192, 0.2);
+        }
+        .glow-accent:hover {
+            box-shadow: 0 0 15px rgba(255, 107, 53, 0.15);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "surface": "#111415",
+                      "on-primary-fixed-variant": "#39475f",
+                      "on-primary": "#233148",
+                      "surface-container": "#1d2021",
+                      "inverse-surface": "#e1e3e4",
+                      "on-secondary-container": "#b8b8b8",
+                      "on-surface": "#e1e3e4",
+                      "primary-fixed-dim": "#b9c7e4",
+                      "on-secondary-fixed": "#1a1c1c",
+                      "on-primary-fixed": "#0d1c32",
+                      "outline": "#8f9097",
+                      "tertiary-fixed": "#ffdbd0",
+                      "on-tertiary-container": "#df551f",
+                      "on-error": "#690005",
+                      "inverse-primary": "#515f78",
+                      "on-tertiary-fixed": "#390c00",
+                      "tertiary": "#ffb59d",
+                      "secondary-container": "#484949",
+                      "surface-variant": "#323536",
+                      "error": "#ffb4ab",
+                      "surface-tint": "#b9c7e4",
+                      "on-error-container": "#ffdad6",
+                      "inverse-on-surface": "#2e3132",
+                      "surface-container-low": "#191c1d",
+                      "on-secondary": "#2f3131",
+                      "on-primary-container": "#74829d",
+                      "surface-container-lowest": "#0c0f10",
+                      "on-tertiary-fixed-variant": "#832600",
+                      "background": "#111415",
+                      "primary-container": "#0a192f",
+                      "surface-bright": "#373a3b",
+                      "secondary-fixed-dim": "#c6c6c6",
+                      "secondary-fixed": "#e3e2e2",
+                      "surface-dim": "#111415",
+                      "surface-container-high": "#282a2b",
+                      "primary-fixed": "#d6e3ff",
+                      "primary": "#b9c7e4",
+                      "on-tertiary": "#5d1900",
+                      "tertiary-fixed-dim": "#ffb59d",
+                      "surface-container-highest": "#323536",
+                      "on-background": "#e1e3e4",
+                      "on-secondary-fixed-variant": "#464747",
+                      "tertiary-container": "#350a00",
+                      "secondary": "#c6c6c6",
+                      "outline-variant": "#44474d",
+                      "on-surface-variant": "#c5c6cd",
+                      "error-container": "#93000a"
+              },
+              "borderRadius": {
+                      "DEFAULT": "0.125rem",
+                      "lg": "0.25rem",
+                      "xl": "0.5rem",
+                      "full": "0.75rem"
+              },
+              "spacing": {
+                      "margin-desktop": "64px",
+                      "unit": "4px",
+                      "gutter": "24px",
+                      "margin-mobile": "16px",
+                      "container-max": "1440px"
+              },
+              "fontFamily": {
+                      "display-lg": ["Montserrat"],
+                      "label-caps": ["JetBrains Mono"],
+                      "headline-md": ["Montserrat"],
+                      "data-mono": ["JetBrains Mono"],
+                      "body-md": ["Inter"],
+                      "headline-sm": ["Montserrat"],
+                      "body-lg": ["Inter"]
+              }
+            }
+          }
+        }
+    </script>
+</head>
+<body class="font-body-md text-body-md antialiased">
+<!-- Top Navigation Bar -->
+<header class="w-full top-0 sticky border-b border-outline-variant/20 bg-surface/95 backdrop-blur-md shadow-sm z-50">
+<div class="flex justify-between items-center h-20 px-margin-desktop max-w-container-max mx-auto">
+<div class="font-display-lg text-headline-md font-bold tracking-tighter text-on-surface uppercase">
+                SHIVAYU AEROSPACE
+            </div>
+<nav class="hidden md:flex items-center gap-8">
+<a class="text-primary font-bold border-b-2 border-primary pb-1 font-label-caps text-label-caps uppercase tracking-widest" href="#">Systems</a>
+<a class="text-on-surface-variant font-medium hover:text-on-surface transition-colors font-label-caps text-label-caps uppercase tracking-widest" href="#">Engineering</a>
+<a class="text-on-surface-variant font-medium hover:text-on-surface transition-colors font-label-caps text-label-caps uppercase tracking-widest" href="#">Manufacturing</a>
+<a class="text-on-surface-variant font-medium hover:text-on-surface transition-colors font-label-caps text-label-caps uppercase tracking-widest" href="#">Quality</a>
+<a class="text-on-surface-variant font-medium hover:text-on-surface transition-colors font-label-caps text-label-caps uppercase tracking-widest" href="#">Supply Chain</a>
+</nav>
+<div class="flex items-center gap-4">
+<button class="px-6 py-2 border border-secondary text-secondary font-label-caps text-label-caps uppercase hover:bg-secondary/10 transition-all active:scale-95">
+                    Client Portal
+                </button>
+<button class="px-6 py-2 bg-[#FF6B35] text-surface font-label-caps text-label-caps uppercase font-bold hover:brightness-110 transition-all active:scale-95">
+                    Contact Sales
+                </button>
+</div>
+</div>
+</header>
+<main>
+<!-- Hero Section -->
+<section class="relative min-h-[921px] flex items-center overflow-hidden" style="background-image: linear-gradient(to right, rgba(17, 20, 21, 0.9) 0%, rgba(17, 20, 21, 0.4) 50%, rgba(17, 20, 21, 0.8) 100%), url('https://lh3.googleusercontent.com/aida/AP1WRLvRFdNOXgrsSXjqOIzVrCKjJuoHqtzA8rJrWTruwUjuBxi9Uvq1o-t9_-BF3ZrIGfB-tCDf3aLrT_mqdZswy2tHcw71UoD1e5Pe7NsWE_MJLYx87sdDLekfukmnCmPgRJGwYwX51pY7kSY8cMdCmLm4POYpaOyRjp_OSbZ38kwYOEdSSu8A0NE_lUH8F4W2CkNRvzxn5mQxZtjVA167GeqWpIsDdDbZJD9oL50_InHAyz4WvDb9yVc6HHI'); background-size: cover; background-position: center;">
+<div class="relative z-10 px-margin-desktop max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<div class="flex flex-col justify-center md:col-span-10">
+<div class="flex items-center gap-3 mb-6">
+<span class="w-12 h-[2px] bg-[#FF6B35]"></span>
+<span class="font-label-caps text-label-caps uppercase tracking-[0.2em] text-[#FF6B35]">Defense &amp; Aerospace Excellence</span>
+</div>
+<h1 class="font-display-lg text-display-lg text-on-surface mb-8 max-w-3xl">
+                        Precision Engineering for the <span class="text-primary">Future of Flight</span>.
+                    </h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-10 max-w-2xl">
+                        A defense-integrated manufacturing ecosystem delivering zero-tolerance components for mission-critical aerospace applications. Led by Indian Army veteran Gp Capt ER Rajappan (Retd).
+                    </p>
+<div class="flex flex-wrap gap-6">
+<div class="flex items-center gap-3 bg-surface-variant/30 border border-outline-variant/30 px-4 py-2">
+<span class="material-symbols-outlined text-primary" data-icon="verified_user">verified_user</span>
+<span class="font-label-caps text-label-caps uppercase">AS9100D Certified</span>
+</div>
+<div class="flex items-center gap-3 bg-surface-variant/30 border border-outline-variant/30 px-4 py-2">
+<span class="material-symbols-outlined text-primary" data-icon="military_tech">military_tech</span>
+<span class="font-label-caps text-label-caps uppercase">Veteran Led</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Leadership Spotlight -->
+<section class="py-24 bg-surface-container-lowest border-y border-outline-variant/20">
+<div class="px-margin-desktop max-w-container-max mx-auto grid grid-cols-1 md:grid-cols-2 gap-16 items-center">
+<div class="relative">
+<div class="absolute -top-4 -left-4 w-24 h-24 border-t-2 border-l-2 border-[#FF6B35]"></div>
+<div class="aspect-[4/5] bg-cover bg-center grayscale hover:grayscale-0 transition-all duration-700" data-alt="A professional portrait of Gp Capt ER Rajappan (Retd) in a sharp dark suit, standing in a high-tech aerospace manufacturing facility. The background shows advanced CNC machinery and a pristine clean-room environment. The lighting is cinematic, casting a professional and authoritative glow on the veteran leader. The aesthetic is modern corporate with technical industrial undertones." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAZHRFO_Qx22Wdi7jkiTYzcn0EgHhkBfI4z9Nbpaxm_8qFWwiSQ5cw6HjccDdfyIepwhSaD4UpZXRYFVVdHNWHjEh5KhXC_bGEe7PlgJpdtC2EchaUfXJIwAhA3iB5C1zUNLFXtzXMY-400AQOBaWQjHYyKoBUdQkLlpoOf2gmUlxan6xo7X8evJDky8tGxJBX6ksn0sqQwYz_HQHTX98tayIfc4N6CUQp3UhXg37L8vnVhAF4k323RxVW6nVIBsDdbsQx1Sh7l7Vwy')"></div>
+<div class="absolute -bottom-6 -right-6 glass-card p-6 border-l-4 border-l-[#FF6B35]">
+<p class="font-label-caps text-label-caps uppercase text-[#FF6B35] mb-1">Strategic Leadership</p>
+<p class="font-headline-sm text-headline-sm text-on-surface">Gp Capt ER Rajappan (Retd)</p>
+<p class="font-body-md text-body-md text-on-surface-variant">Indian Army Veteran &amp; Chief Executive</p>
+</div>
+</div>
+<div>
+<h2 class="font-display-lg text-headline-md text-on-surface mb-8 uppercase tracking-tight">The Veteran's Standard</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-6 italic">
+                        "In the theater of flight, there is no margin for error. We apply military-grade discipline to every micron we machine, ensuring that SHIVAYU components never fail those who depend on them."
+                    </p>
+<div class="grid grid-cols-2 gap-8 mt-12">
+<div>
+<p class="font-display-lg text-headline-md text-primary font-bold">35+</p>
+<p class="font-label-caps text-label-caps uppercase text-on-surface-variant">Years of Defense Ops</p>
+</div>
+<div>
+<p class="font-display-lg text-headline-md text-primary font-bold">0.001mm</p>
+<p class="font-label-caps text-label-caps uppercase text-on-surface-variant">Machining Tolerance</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Core Capabilities (Bento Grid) -->
+<section class="py-32 px-margin-desktop max-w-container-max mx-auto">
+<div class="flex justify-between items-end mb-16">
+<div>
+<p class="font-label-caps text-label-caps uppercase tracking-widest text-[#FF6B35] mb-4">Core Capabilities</p>
+<h2 class="font-display-lg text-display-lg text-on-surface">Integrated Manufacturing Ecosystem</h2>
+</div>
+<div class="hidden md:block">
+<span class="font-data-mono text-data-mono text-on-surface-variant">CATALOG_REF: SVY-2024-CAPS</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-4 gap-6">
+<!-- Large Card -->
+<div class="md:col-span-2 md:row-span-2 glass-card p-10 flex flex-col justify-between group overflow-hidden relative">
+<div class="relative z-10">
+<span class="material-symbols-outlined text-4xl text-[#FF6B35] mb-6" data-icon="precision_manufacturing">precision_manufacturing</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mb-4">High-Precision CNC Machining</h3>
+<p class="text-on-surface-variant max-w-md">Multi-axis milling and turning for exotic aerospace alloys including Titanium, Inconel, and Magnesium components.</p>
+</div>
+<div class="mt-12 relative z-10">
+<ul class="space-y-3 font-data-mono text-data-mono">
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-primary"></span> 5-Axis Simultaneous Milling</li>
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-primary"></span> Swiss-Type Lathe Turning</li>
+<li class="flex items-center gap-2"><span class="w-1.5 h-1.5 bg-primary"></span> EDM Wire &amp; Sinker</li>
+</ul>
+</div>
+<div class="absolute bottom-[-10%] right-[-5%] w-64 h-64 opacity-10 group-hover:opacity-20 transition-opacity">
+<span class="material-symbols-outlined text-[12rem]" data-icon="settings_suggest">settings_suggest</span>
+</div>
+</div>
+<!-- Small Cards -->
+<div class="glass-card p-8 group hover:border-[#FF6B35]/40 transition-colors">
+<span class="material-symbols-outlined text-3xl text-primary mb-4" data-icon="architecture">architecture</span>
+<h4 class="font-headline-sm text-headline-sm mb-2">Design for Manufacturability</h4>
+<p class="text-on-surface-variant text-sm">Optimizing complex geometries for weight reduction and structural integrity.</p>
+</div>
+<div class="glass-card p-8 group hover:border-[#FF6B35]/40 transition-colors">
+<span class="material-symbols-outlined text-3xl text-primary mb-4" data-icon="biotech">biotech</span>
+<h4 class="font-headline-sm text-headline-sm mb-2">Non-Destructive Testing</h4>
+<p class="text-on-surface-variant text-sm">Ultrasonic, Radiographic, and Dye Penetrant testing to AS9100 standards.</p>
+</div>
+<div class="md:col-span-2 glass-card p-8 flex items-center justify-between group">
+<div>
+<h4 class="font-headline-sm text-headline-sm mb-2">Supply Chain Integration</h4>
+<p class="text-on-surface-variant text-sm">Direct-to-line delivery for Tier 1 aerospace OEMs globally.</p>
+</div>
+<button class="w-12 h-12 rounded-full border border-outline-variant flex items-center justify-center group-hover:bg-[#FF6B35] group-hover:border-[#FF6B35] group-hover:text-surface transition-all">
+<span class="material-symbols-outlined" data-icon="arrow_forward">arrow_forward</span>
+</button>
+</div>
+</div>
+</section>
+<!-- Technical Data/Standards Table -->
+<section class="py-24 bg-primary-container/30">
+<div class="px-margin-desktop max-w-container-max mx-auto">
+<div class="text-center mb-16">
+<h2 class="font-display-lg text-headline-md text-on-surface uppercase mb-4 tracking-tighter">Standards of Excellence</h2>
+<p class="font-label-caps text-label-caps uppercase text-on-surface-variant tracking-widest">Global Compliance Matrix</p>
+</div>
+<div class="overflow-hidden border border-outline-variant/30 rounded-lg">
+<table class="w-full text-left">
+<thead class="bg-[#071221] border-b border-outline-variant/30">
+<tr>
+<th class="px-8 py-4 font-label-caps text-label-caps text-primary uppercase">Certification</th>
+<th class="px-8 py-4 font-label-caps text-label-caps text-primary uppercase">Focus Area</th>
+<th class="px-8 py-4 font-label-caps text-label-caps text-primary uppercase">Registry Status</th>
+<th class="px-8 py-4 font-label-caps text-label-caps text-primary uppercase">Verification Date</th>
+</tr>
+</thead>
+<tbody class="divide-y divide-outline-variant/20 font-data-mono text-data-mono">
+<tr class="hover:bg-surface-variant/10">
+<td class="px-8 py-6 text-on-surface font-bold">AS9100 REV D</td>
+<td class="px-8 py-6 text-on-surface-variant">Quality Management System - Aerospace</td>
+<td class="px-8 py-6"><span class="px-2 py-1 bg-emerald-900/30 text-emerald-400 border border-emerald-400/30 text-[10px] uppercase font-bold">In-Spec</span></td>
+<td class="px-8 py-6 text-on-surface-variant">OCT 2023</td>
+</tr>
+<tr class="hover:bg-surface-variant/10">
+<td class="px-8 py-6 text-on-surface font-bold">ITAR / EAR</td>
+<td class="px-8 py-6 text-on-surface-variant">Defense Trade Controls &amp; Compliance</td>
+<td class="px-8 py-6"><span class="px-2 py-1 bg-emerald-900/30 text-emerald-400 border border-emerald-400/30 text-[10px] uppercase font-bold">Active</span></td>
+<td class="px-8 py-6 text-on-surface-variant">JAN 2024</td>
+</tr>
+<tr class="hover:bg-surface-variant/10">
+<td class="px-8 py-6 text-on-surface font-bold">ISO 9001:2015</td>
+<td class="px-8 py-6 text-on-surface-variant">Global Manufacturing Quality Standard</td>
+<td class="px-8 py-6"><span class="px-2 py-1 bg-emerald-900/30 text-emerald-400 border border-emerald-400/30 text-[10px] uppercase font-bold">In-Spec</span></td>
+<td class="px-8 py-6 text-on-surface-variant">OCT 2023</td>
+</tr>
+</tbody>
+</table>
+</div>
+</div>
+</section>
+<!-- Lead Generation Form -->
+<section class="py-32 px-margin-desktop max-w-container-max mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-24 items-start">
+<div>
+<h2 class="font-display-lg text-display-lg text-on-surface mb-8">Initiate <br/>Technical Consultation</h2>
+<p class="font-body-lg text-on-surface-variant mb-12">
+                        Submit your project requirements or RFQ documents. Our engineering team will conduct a feasibility study and provide a preliminary technical assessment within 48 hours.
+                    </p>
+<div class="space-y-8">
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary" data-icon="location_on">location_on</span>
+<div>
+<p class="font-label-caps text-label-caps text-on-surface uppercase mb-1">HQ &amp; Manufacturing Base</p>
+<p class="text-on-surface-variant">Aerospace Park, Devanahalli, Bengaluru, KA - 562110</p>
+</div>
+</div>
+<div class="flex items-start gap-4">
+<span class="material-symbols-outlined text-primary" data-icon="mail">mail</span>
+<div>
+<p class="font-label-caps text-label-caps text-on-surface uppercase mb-1">Direct Engineering Line</p>
+<p class="text-on-surface-variant">projects@shivayuaero.com</p>
+</div>
+</div>
+</div>
+</div>
+<div class="glass-card p-10 border-l-4 border-l-[#FF6B35]">
+<form class="space-y-6">
+<div class="grid grid-cols-2 gap-6">
+<div class="flex flex-col gap-2">
+<label class="font-label-caps text-label-caps text-on-surface uppercase">Full Name</label>
+<input class="bg-[#071221] border-outline-variant/30 text-on-surface focus:ring-[#FF6B35] focus:border-[#FF6B35] rounded-none" type="text"/>
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-label-caps text-label-caps text-on-surface uppercase">Organization</label>
+<input class="bg-[#071221] border-outline-variant/30 text-on-surface focus:ring-[#FF6B35] focus:border-[#FF6B35] rounded-none" type="text"/>
+</div>
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-label-caps text-label-caps text-on-surface uppercase">Professional Email</label>
+<input class="bg-[#071221] border-outline-variant/30 text-on-surface focus:ring-[#FF6B35] focus:border-[#FF6B35] rounded-none" type="email"/>
+</div>
+<div class="flex flex-col gap-2">
+<label class="font-label-caps text-label-caps text-on-surface uppercase">Technical Requirements (RFQ)</label>
+<textarea class="bg-[#071221] border-outline-variant/30 text-on-surface focus:ring-[#FF6B35] focus:border-[#FF6B35] rounded-none" rows="4"></textarea>
+</div>
+<div class="pt-4">
+<button class="w-full py-4 bg-[#FF6B35] text-surface font-display-lg text-headline-sm font-bold uppercase tracking-widest hover:brightness-110 active:scale-[0.98] transition-all" type="submit">
+                                Submit RFQ Package
+                            </button>
+<p class="text-center font-data-mono text-[10px] text-on-surface-variant mt-4 opacity-60">
+                                ENCRYPTION SECURED: AES-256 END-TO-END
+                            </p>
+</div>
+</form>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full mt-auto border-t border-outline-variant/30 bg-surface-container-lowest">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter py-12 px-margin-desktop max-w-container-max mx-auto">
+<div>
+<div class="font-display-lg text-headline-sm font-bold text-on-surface mb-6 uppercase">
+                    SHIVAYU AEROSPACE
+                </div>
+<p class="font-label-caps text-label-caps uppercase tracking-widest text-secondary mb-2">
+                    © 2024 SHIVAYU AEROSPACE. PRECISION ENGINEERED FOR EXTREME ENVIRONMENTS.
+                </p>
+</div>
+<div class="flex flex-wrap md:justify-end gap-x-8 gap-y-4">
+<a class="font-label-caps text-label-caps uppercase tracking-widest text-on-secondary-container hover:text-primary transition-colors hover:underline decoration-primary underline-offset-4" href="#">AS9100D Certified</a>
+<a class="font-label-caps text-label-caps uppercase tracking-widest text-on-secondary-container hover:text-primary transition-colors hover:underline decoration-primary underline-offset-4" href="#">ITAR Registered</a>
+<a class="font-label-caps text-label-caps uppercase tracking-widest text-on-secondary-container hover:text-primary transition-colors hover:underline decoration-primary underline-offset-4" href="#">Privacy Policy</a>
+<a class="font-label-caps text-label-caps uppercase tracking-widest text-on-secondary-container hover:text-primary transition-colors hover:underline decoration-primary underline-offset-4" href="#">Compliance</a>
+<a class="font-label-caps text-label-caps uppercase tracking-widest text-on-secondary-container hover:text-primary transition-colors hover:underline decoration-primary underline-offset-4" href="#">Career Portal</a>
+</div>
+</div>
+</footer>
+<script>
+        // Micro-interactions for technical industrial feel
+        document.querySelectorAll('button, a').forEach(el => {
+            el.addEventListener('mouseenter', () => {
+                // Subtle haptic-like animation could go here
+            });
+        });
+
+        // Initialize any animations if needed
+        window.addEventListener('load', () => {
+            console.log('SHIVAYU AEROSPACE UI INITIALIZED');
+        });
+    </script>
+</body></html>

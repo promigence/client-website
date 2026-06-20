@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Careers | SHIVAYU AEROSPACE</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&amp;family=JetBrains+Mono:wght@400;500&amp;family=Inter:wght@400;500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "surface": "#111415",
+                    "on-primary-fixed-variant": "#39475f",
+                    "on-primary": "#233148",
+                    "surface-container": "#1d2021",
+                    "inverse-surface": "#e1e3e4",
+                    "on-secondary-container": "#b8b8b8",
+                    "on-surface": "#e1e3e4",
+                    "primary-fixed-dim": "#b9c7e4",
+                    "on-secondary-fixed": "#1a1c1c",
+                    "on-primary-fixed": "#0d1c32",
+                    "outline": "#8f9097",
+                    "tertiary-fixed": "#ffdbd0",
+                    "on-tertiary-container": "#df551f",
+                    "on-error": "#690005",
+                    "inverse-primary": "#515f78",
+                    "on-tertiary-fixed": "#390c00",
+                    "tertiary": "#ffb59d",
+                    "secondary-container": "#484949",
+                    "surface-variant": "#323536",
+                    "error": "#ffb4ab",
+                    "surface-tint": "#b9c7e4",
+                    "on-error-container": "#ffdad6",
+                    "inverse-on-surface": "#2e3132",
+                    "surface-container-low": "#191c1d",
+                    "on-secondary": "#2f3131",
+                    "on-primary-container": "#74829d",
+                    "surface-container-lowest": "#0c0f10",
+                    "on-tertiary-fixed-variant": "#832600",
+                    "background": "#111415",
+                    "primary-container": "#0a192f",
+                    "surface-bright": "#373a3b",
+                    "secondary-fixed-dim": "#c6c6c6",
+                    "secondary-fixed": "#e3e2e2",
+                    "surface-dim": "#111415",
+                    "surface-container-high": "#282a2b",
+                    "primary-fixed": "#d6e3ff",
+                    "primary": "#b9c7e4",
+                    "on-tertiary": "#5d1900",
+                    "tertiary-fixed-dim": "#ffb59d",
+                    "surface-container-highest": "#323536",
+                    "on-background": "#e1e3e4",
+                    "on-secondary-fixed-variant": "#464747",
+                    "tertiary-container": "#350a00",
+                    "secondary": "#c6c6c6",
+                    "outline-variant": "#44474d",
+                    "on-surface-variant": "#c5c6cd",
+                    "error-container": "#93000a",
+                    "accent-orange": "#FF6B35",
+                    "metallic-silver": "#C0C0C0"
+            },
+            "borderRadius": {
+                    "DEFAULT": "0.125rem",
+                    "lg": "0.25rem",
+                    "xl": "0.5rem",
+                    "full": "0.75rem"
+            },
+            "spacing": {
+                    "margin-desktop": "64px",
+                    "unit": "4px",
+                    "gutter": "24px",
+                    "margin-mobile": "16px",
+                    "container-max": "1440px"
+            },
+            "fontFamily": {
+                    "display-lg": ["Montserrat"],
+                    "label-caps": ["JetBrains Mono"],
+                    "headline-md": ["Montserrat"],
+                    "display-lg-mobile": ["Montserrat"],
+                    "data-mono": ["JetBrains Mono"],
+                    "body-md": ["Inter"],
+                    "headline-sm": ["Montserrat"],
+                    "body-lg": ["Inter"]
+            },
+            "fontSize": {
+                    "display-lg": ["48px", {"lineHeight": "56px", "letterSpacing": "-0.02em", "fontWeight": "700"}],
+                    "label-caps": ["12px", {"lineHeight": "16px", "letterSpacing": "0.05em", "fontWeight": "500"}],
+                    "headline-md": ["24px", {"lineHeight": "32px", "fontWeight": "600"}],
+                    "display-lg-mobile": ["32px", {"lineHeight": "40px", "fontWeight": "700"}],
+                    "data-mono": ["14px", {"lineHeight": "20px", "fontWeight": "400"}],
+                    "body-md": ["14px", {"lineHeight": "22px", "fontWeight": "400"}],
+                    "headline-sm": ["18px", {"lineHeight": "24px", "fontWeight": "600"}],
+                    "body-lg": ["16px", {"lineHeight": "26px", "fontWeight": "400"}]
+            }
+          },
+        },
+      }
+    </script>
+<style>
+        body {
+            background-color: #0A192F;
+            background-image: radial-gradient(#112240 1px, transparent 1px);
+            background-size: 32px 32px;
+            color: #e1e3e4;
+        }
+        .technical-grid-overlay {
+            position: fixed;
+            inset: 0;
+            pointer-events: none;
+            background-image: linear-gradient(to right, rgba(192, 192, 192, 0.05) 1px, transparent 1px),
+                              linear-gradient(to bottom, rgba(192, 192, 192, 0.05) 1px, transparent 1px);
+            background-size: 128px 128px;
+            z-index: 50;
+        }
+        .btn-primary {
+            background-color: #FF6B35;
+            color: #000;
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .btn-primary:hover {
+            filter: brightness(1.1);
+            transform: translateY(-1px);
+            box-shadow: 0 0 15px rgba(255, 107, 53, 0.3);
+        }
+        .glass-panel {
+            background: rgba(17, 34, 64, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(192, 192, 192, 0.1);
+        }
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 300, 'GRAD' 0, 'opsz' 24;
+            vertical-align: middle;
+        }
+    </style>
+</head>
+<body class="font-body-md">
+<div class="technical-grid-overlay"></div>
+<!-- TopNavBar -->
+<header class="w-full top-0 sticky z-40 border-b border-outline-variant/20 bg-surface/95 backdrop-blur-md shadow-sm">
+<nav class="flex justify-between items-center h-20 px-margin-desktop max-w-container-max mx-auto">
+<div class="flex items-center gap-8">
+<a class="font-display-lg text-headline-md font-bold tracking-tighter text-on-surface uppercase" href="#">SHIVAYU AEROSPACE</a>
+<div class="hidden md:flex gap-6 items-center">
+<a class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant font-medium hover:text-on-surface transition-colors" href="#">Systems</a>
+<a class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant font-medium hover:text-on-surface transition-colors" href="#">Engineering</a>
+<a class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant font-medium hover:text-on-surface transition-colors" href="#">Manufacturing</a>
+<a class="font-label-caps text-label-caps uppercase tracking-widest text-on-surface-variant font-medium hover:text-on-surface transition-colors" href="#">Quality</a>
+<a class="font-label-caps text-label-caps uppercase tracking-widest text-primary font-bold border-b-2 border-primary pb-1" href="#">Career Portal</a>
+</div>
+</div>
+<div class="flex items-center gap-4">
+<button class="font-label-caps text-label-caps uppercase tracking-widest px-4 py-2 text-on-surface-variant hover:text-on-surface transition-all">Client Portal</button>
+<button class="btn-primary font-label-caps text-label-caps uppercase tracking-widest px-6 py-2.5 rounded-sm font-bold">Contact Sales</button>
+</div>
+</nav>
+</header>
+<main class="relative">
+<!-- Hero Section -->
+<section class="relative min-h-[716px] flex flex-col justify-center px-margin-desktop max-w-container-max mx-auto py-20 overflow-hidden">
+<div class="z-10 max-w-3xl">
+<div class="inline-flex items-center gap-2 px-3 py-1 mb-6 border border-accent-orange/30 bg-accent-orange/5 text-accent-orange rounded-sm">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">rocket_launch</span>
+<span class="font-label-caps text-label-caps uppercase tracking-[0.2em]">Extreme Environment Engineering</span>
+</div>
+<h1 class="font-display-lg text-display-lg mb-6 leading-none">BUILD THE<br/><span class="text-accent-orange">FUTURE OF FLIGHT</span></h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-xl mb-10">
+                    We are seeking elite engineers and specialized technicians to develop next-generation thermal protection systems and high-tolerance aerospace structures. Join a mission where zero-tolerance is the standard.
+                </p>
+<div class="flex gap-4">
+<a class="btn-primary font-label-caps text-label-caps uppercase tracking-widest px-8 py-4 rounded-sm font-bold flex items-center gap-2" href="#roles">
+                        View Active Roles
+                        <span class="material-symbols-outlined">north_east</span>
+</a>
+<a class="border border-metallic-silver/30 font-label-caps text-label-caps uppercase tracking-widest px-8 py-4 rounded-sm font-bold text-on-surface hover:bg-white/5 transition-all" href="#compliance">
+                        Technical Standards
+                    </a>
+</div>
+</div>
+<!-- Animated Visual Element -->
+<div class="absolute right-0 top-1/2 -translate-y-1/2 w-1/2 h-[80%] opacity-40 pointer-events-none">
+
+</div>
+</section>
+<!-- Stats Ticker -->
+<div class="border-y border-outline-variant/20 bg-surface-container-lowest/50 py-6">
+<div class="px-margin-desktop max-w-container-max mx-auto flex justify-between items-center overflow-x-auto no-scrollbar gap-12">
+<div class="flex flex-col">
+<span class="font-label-caps text-[10px] uppercase text-outline tracking-widest">Precision Standard</span>
+<span class="font-data-mono text-headline-sm text-primary">±0.0001 MM</span>
+</div>
+<div class="w-px h-8 bg-outline-variant/30"></div>
+<div class="flex flex-col">
+<span class="font-label-caps text-[10px] uppercase text-outline tracking-widest">Materials Lab</span>
+<span class="font-data-mono text-headline-sm text-primary">TI-6AL-4V</span>
+</div>
+<div class="w-px h-8 bg-outline-variant/30"></div>
+<div class="flex flex-col">
+<span class="font-label-caps text-[10px] uppercase text-outline tracking-widest">Certifications</span>
+<span class="font-data-mono text-headline-sm text-primary">AS9100D</span>
+</div>
+<div class="w-px h-8 bg-outline-variant/30"></div>
+<div class="flex flex-col">
+<span class="font-label-caps text-[10px] uppercase text-outline tracking-widest">ITAR Status</span>
+<span class="font-data-mono text-headline-sm text-primary">REGISTERED</span>
+</div>
+</div>
+</div>
+<!-- Roles Grid -->
+<section class="py-24 px-margin-desktop max-w-container-max mx-auto" id="roles">
+<div class="flex justify-between items-end mb-16">
+<div>
+<h2 class="font-display-lg text-headline-md uppercase tracking-tight mb-2">Featured Operational Roles</h2>
+<div class="h-1 w-24 bg-accent-orange"></div>
+</div>
+<div class="hidden md:block">
+<span class="font-data-mono text-label-caps text-on-surface-variant">ACTIVE_VACANCIES: 03</span>
+</div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- CNC Machinist -->
+<div class="glass-panel p-8 group relative overflow-hidden flex flex-col h-full">
+<div class="absolute top-0 right-0 p-4 font-data-mono text-[10px] text-accent-orange opacity-50">UNIT: PROT_01</div>
+<span class="material-symbols-outlined text-accent-orange text-4xl mb-6">precision_manufacturing</span>
+<h3 class="font-headline-sm text-headline-sm mb-4 uppercase tracking-tighter">CNC Machinist</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8 flex-grow">
+                        Operation of 5-axis DMG MORI systems for high-nickel alloy components. Requires expert understanding of G-code and sub-micron tolerance verification.
+                    </p>
+<div class="space-y-3 mb-8">
+<div class="flex justify-between items-center border-b border-outline-variant/20 pb-2">
+<span class="font-label-caps text-label-caps text-outline uppercase">Shifts</span>
+<span class="font-data-mono text-label-caps">Alpha / Beta</span>
+</div>
+<div class="flex justify-between items-center border-b border-outline-variant/20 pb-2">
+<span class="font-label-caps text-label-caps text-outline uppercase">Clearance</span>
+<span class="font-data-mono text-label-caps">L2 Tier</span>
+</div>
+</div>
+<button class="w-full py-3 border border-accent-orange text-accent-orange font-label-caps text-label-caps uppercase tracking-widest hover:bg-accent-orange hover:text-surface transition-all">Request Specs</button>
+</div>
+<!-- Quality Engineer -->
+<div class="glass-panel p-8 group relative overflow-hidden flex flex-col h-full border-accent-orange/40">
+<div class="absolute top-0 right-0 p-4 font-data-mono text-[10px] text-accent-orange opacity-50">UNIT: QUAL_09</div>
+<span class="material-symbols-outlined text-accent-orange text-4xl mb-6">verified</span>
+<h3 class="font-headline-sm text-headline-sm mb-4 uppercase tracking-tighter">Quality Engineer</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8 flex-grow">
+                        Implementation of AS9100D protocols and non-destructive testing (NDT) oversight. Managing automated CMM inspections for orbital delivery hardware.
+                    </p>
+<div class="space-y-3 mb-8">
+<div class="flex justify-between items-center border-b border-outline-variant/20 pb-2">
+<span class="font-label-caps text-label-caps text-outline uppercase">Department</span>
+<span class="font-data-mono text-label-caps">Assurance</span>
+</div>
+<div class="flex justify-between items-center border-b border-outline-variant/20 pb-2">
+<span class="font-label-caps text-label-caps text-outline uppercase">Tools</span>
+<span class="font-data-mono text-label-caps">GDT / SPC</span>
+</div>
+</div>
+<button class="w-full py-3 bg-accent-orange text-surface font-label-caps text-label-caps uppercase tracking-widest hover:brightness-110 transition-all">Submit Portfolio</button>
+</div>
+<!-- Design Lead -->
+<div class="glass-panel p-8 group relative overflow-hidden flex flex-col h-full">
+<div class="absolute top-0 right-0 p-4 font-data-mono text-[10px] text-accent-orange opacity-50">UNIT: DSGN_12</div>
+<span class="material-symbols-outlined text-accent-orange text-4xl mb-6">architecture</span>
+<h3 class="font-headline-sm text-headline-sm mb-4 uppercase tracking-tighter">Design Lead</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mb-8 flex-grow">
+                        Leading the propulsion systems structural design group. Focus on generative design for additive manufacturing (AM) and topology optimization.
+                    </p>
+<div class="space-y-3 mb-8">
+<div class="flex justify-between items-center border-b border-outline-variant/20 pb-2">
+<span class="font-label-caps text-label-caps text-outline uppercase">Experience</span>
+<span class="font-data-mono text-label-caps">10+ Solar Years</span>
+</div>
+<div class="flex justify-between items-center border-b border-outline-variant/20 pb-2">
+<span class="font-label-caps text-label-caps text-outline uppercase">Stack</span>
+<span class="font-data-mono text-label-caps">CATIA / NX</span>
+</div>
+</div>
+<button class="w-full py-3 border border-accent-orange text-accent-orange font-label-caps text-label-caps uppercase tracking-widest hover:bg-accent-orange hover:text-surface transition-all">Request Specs</button>
+</div>
+</div>
+</section>
+<!-- Compliance Registration Form -->
+<section class="py-24 bg-surface-container-lowest/30 border-y border-outline-variant/10" id="compliance">
+<div class="px-margin-desktop max-w-container-max mx-auto grid grid-cols-1 lg:grid-cols-2 gap-16">
+<div>
+<h2 class="font-display-lg text-display-lg-mobile md:text-headline-md uppercase mb-6">Register Your Interest</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant mb-10">
+                        Our recruitment process involves rigorous technical evaluation and ITAR compliance screening. Please provide accurate aerospace operational data to initiate the vetting protocol.
+                    </p>
+<div class="space-y-8">
+<div class="flex gap-4">
+<div class="w-10 h-10 flex items-center justify-center bg-primary-container text-primary font-data-mono border border-primary/20">01</div>
+<div>
+<h4 class="font-headline-sm text-[16px] uppercase tracking-wider mb-1">Technical Review</h4>
+<p class="font-body-md text-body-md text-on-secondary-container">Assessment of material science knowledge and tolerance management.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="w-10 h-10 flex items-center justify-center bg-primary-container text-primary font-data-mono border border-primary/20">02</div>
+<div>
+<h4 class="font-headline-sm text-[16px] uppercase tracking-wider mb-1">Security Screening</h4>
+<p class="font-body-md text-body-md text-on-secondary-container">Verification of ITAR eligibility and background security clearance.</p>
+</div>
+</div>
+<div class="flex gap-4">
+<div class="w-10 h-10 flex items-center justify-center bg-primary-container text-primary font-data-mono border border-primary/20">03</div>
+<div>
+<h4 class="font-headline-sm text-[16px] uppercase tracking-wider mb-1">Deep Horizon Testing</h4>
+<p class="font-body-md text-body-md text-on-secondary-container">On-site practical demonstration of engineering proficiency.</p>
+</div>
+</div>
+</div>
+</div>
+<div class="glass-panel p-10 border-metallic-silver/20 relative">
+<!-- Scanner decorative line -->
+<div class="absolute top-0 left-0 w-full h-[2px] bg-accent-orange/40 animate-[scan_4s_ease-in-out_infinite]"></div>
+<form class="space-y-6">
+<div class="grid grid-cols-2 gap-4">
+<div class="space-y-2">
+<label class="font-label-caps text-label-caps uppercase text-outline">Full Name [Legal]</label>
+<input class="w-full bg-[#071221] border border-metallic-silver/20 px-4 py-3 text-on-surface focus:border-accent-orange focus:ring-1 focus:ring-accent-orange transition-all font-data-mono uppercase outline-none" placeholder="ENTRY REQUIRED" type="text"/>
+</div>
+<div class="space-y-2">
+<label class="font-label-caps text-label-caps uppercase text-outline">Employee Class</label>
+<select class="w-full bg-[#071221] border border-metallic-silver/20 px-4 py-3 text-on-surface focus:border-accent-orange focus:ring-1 focus:ring-accent-orange transition-all font-data-mono uppercase outline-none appearance-none">
+<option>Engineering (ENG)</option>
+<option>Technician (TECH)</option>
+<option>Ops / Quality (OPS)</option>
+</select>
+</div>
+</div>
+<div class="space-y-2">
+<label class="font-label-caps text-label-caps uppercase text-outline">Email [Secured Interface]</label>
+<input class="w-full bg-[#071221] border border-metallic-silver/20 px-4 py-3 text-on-surface focus:border-accent-orange focus:ring-1 focus:ring-accent-orange transition-all font-data-mono uppercase outline-none" placeholder="USER@NODE.COM" type="email"/>
+</div>
+<div class="space-y-2">
+<label class="font-label-caps text-label-caps uppercase text-outline">ITAR Eligibility Declaration</label>
+<div class="flex items-center gap-4 py-3">
+<label class="flex items-center gap-2 cursor-pointer">
+<input class="w-4 h-4 text-accent-orange bg-surface border-outline-variant focus:ring-accent-orange" name="itar" type="radio"/>
+<span class="font-label-caps text-[10px]">US PERSON (ITAR)</span>
+</label>
+<label class="flex items-center gap-2 cursor-pointer">
+<input class="w-4 h-4 text-accent-orange bg-surface border-outline-variant focus:ring-accent-orange" name="itar" type="radio"/>
+<span class="font-label-caps text-[10px]">FOREIGN NATIONAL</span>
+</label>
+</div>
+</div>
+<div class="space-y-2">
+<label class="font-label-caps text-label-caps uppercase text-outline">Core Competencies [Comma Separated]</label>
+<textarea class="w-full bg-[#071221] border border-metallic-silver/20 px-4 py-3 text-on-surface focus:border-accent-orange focus:ring-1 focus:ring-accent-orange transition-all font-data-mono uppercase outline-none resize-none" placeholder="METALLURGY, CNC, FLUID DYNAMICS..." rows="3"></textarea>
+</div>
+<div class="pt-4">
+<button class="w-full btn-primary font-label-caps text-label-caps uppercase tracking-[0.2em] py-5 font-bold flex justify-center items-center gap-4" type="submit">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">security</span>
+                                TRANSMIT APPLICATION DATA
+                            </button>
+<p class="mt-4 text-center font-data-mono text-[10px] text-outline">ENCRYPTION: AES-256 | STATUS: SECURE_CHANNEL_READY</p>
+</div>
+</form>
+</div>
+</div>
+</section>
+<!-- Facilities Preview -->
+<section class="py-24 px-margin-desktop max-w-container-max mx-auto">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-4">
+<div class="md:col-span-2 relative h-[400px] group overflow-hidden border border-outline-variant/30">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="A cinematic, high-contrast photograph of a pristine aerospace clean room. Technicians in white bunny suits work on a massive, gleaming titanium structural component. The lighting is cold and clinical, dominated by deep blues and metallic silver highlights. The atmosphere suggests extreme precision and high-tech manufacturing." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuCFh7Qax3864aMbDEMX2d7eqMhrIzn0VTThESAriAis0LNAo4OkScr0vphoOONyCuQyZVKTIxlFRtUaljpGp_V0ivh5mo6tdSH7xnVqDJJk9244em_JofDdtfaiwSMQtc_LBAD5-3x0EbYCFfMIeuHg5PctgDOYic2xvG-yY6Jmxj498BoYaKi1CYK4c6qTwhM1632jixgVonW3CBjZ94jCmlTk1wCRHaHCx0W-m0c21OI1y5mgj_F71ZRj9BReveYsWMQKS12cXS3-')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface to-transparent opacity-60"></div>
+<div class="absolute bottom-0 left-0 p-8">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-accent-orange mb-2 block">Zone A-1</span>
+<h4 class="font-headline-sm text-headline-sm uppercase">Main Assembly Floor</h4>
+</div>
+</div>
+<div class="relative h-[400px] group overflow-hidden border border-outline-variant/30">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="A macro close-up of a high-tech CNC milling machine carving into a slab of aerospace-grade titanium. Coolant fluid sprays in a fine mist, illuminated by intense sparks and white machine lights. The aesthetic is industrial and technical, featuring sharp details of the cutting head and metal shavings." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuA15IOYeI7JfzVeF_Nx-t_Eq8HnzZhwfc4g_q9D8BY8MzT-vqeqrqpRzyALolF1J2Dx4_6onqverdCe2-QeZZIciJR95J8aPXx7gBJ-6ON6sW93_NGrd0zubxYL2jpRhAVTWHxB0wadqV3wmoZTbvS-KnrsJ-WKvjmM5A_DJ5YjsxGYDGKUe_mUOwCvJwUuf6tVYTnyhcSFM9ger0TleuAqUuAMfBBJynKq4BkvrRiL8Td1MZr0kNZFi5N8P8TIMgedWkiiPYQzBvDx')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface to-transparent opacity-60"></div>
+<div class="absolute bottom-0 left-0 p-8">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-accent-orange mb-2 block">Zone M-4</span>
+<h4 class="font-headline-sm text-headline-sm uppercase">Precision Machining</h4>
+</div>
+</div>
+<div class="relative h-[400px] group overflow-hidden border border-outline-variant/30">
+<div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" data-alt="A wide-angle shot of a sleek, dark-themed engineering design office. Modern workstations with multiple monitors display complex 3D CAD models of rocket engines. The room is dimly lit with accent lighting in safety orange, reflecting off metallic surfaces and dark glass panels. The mood is focused and innovative." style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuAflwpsgpOFBZ8Xk3y6E6PqkNOGSmIT90TQY4kG22JOcRBrkkDltqFmLcTAU2Xg8A_F7Vh4F7I5AJMhRprJSjCvf9_GKJPjlIDwaHew2rVJw7yWjfYd0cfR2XVYJGIJJQGAL6ngcCC5F_KjVQNYvP46FRFSzRIyRIsWeXu4WOAk8Uo1XNjB99Rvg525s4X9yJ7I6V7xND3zarJygWEDrnipi24hs9_XMrlmiW3Pgw-VIVrxI3BQWZSrQjgQDOSUQ2Lac-iMIMs-1XcF')"></div>
+<div class="absolute inset-0 bg-gradient-to-t from-surface to-transparent opacity-60"></div>
+<div class="absolute bottom-0 left-0 p-8">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-accent-orange mb-2 block">Zone D-9</span>
+<h4 class="font-headline-sm text-headline-sm uppercase">Design Hub</h4>
+</div>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="w-full mt-auto border-t border-outline-variant/30 bg-surface-container-lowest">
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter py-12 px-margin-desktop max-w-container-max mx-auto">
+<div class="space-y-6">
+<div class="font-display-lg text-headline-sm font-bold text-on-surface uppercase tracking-tight">SHIVAYU AEROSPACE</div>
+<p class="font-label-caps text-label-caps uppercase tracking-widest text-secondary max-w-md">
+                    © 2024 SHIVAYU AEROSPACE. PRECISION ENGINEERED FOR EXTREME ENVIRONMENTS.
+                </p>
+<div class="flex gap-4">
+<span class="material-symbols-outlined text-outline cursor-pointer hover:text-accent-orange transition-colors">hub</span>
+<span class="material-symbols-outlined text-outline cursor-pointer hover:text-accent-orange transition-colors">terminal</span>
+<span class="material-symbols-outlined text-outline cursor-pointer hover:text-accent-orange transition-colors">satellite_alt</span>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-8">
+<div class="flex flex-col gap-3">
+<span class="font-label-caps text-label-caps text-on-surface font-bold uppercase mb-2">Protocols</span>
+<a class="font-label-caps text-label-caps text-on-secondary-container hover:text-primary transition-colors hover:underline decoration-primary underline-offset-4 uppercase" href="#">AS9100D Certified</a>
+<a class="font-label-caps text-label-caps text-on-secondary-container hover:text-primary transition-colors hover:underline decoration-primary underline-offset-4 uppercase" href="#">ITAR Registered</a>
+<a class="font-label-caps text-label-caps text-on-secondary-container hover:text-primary transition-colors hover:underline decoration-primary underline-offset-4 uppercase" href="#">Quality Manual</a>
+</div>
+<div class="flex flex-col gap-3">
+<span class="font-label-caps text-label-caps text-on-surface font-bold uppercase mb-2">Operations</span>
+<a class="font-label-caps text-label-caps text-on-secondary-container hover:text-primary transition-colors hover:underline decoration-primary underline-offset-4 uppercase" href="#">Privacy Policy</a>
+<a class="font-label-caps text-label-caps text-on-secondary-container hover:text-primary transition-colors hover:underline decoration-primary underline-offset-4 uppercase" href="#">Compliance</a>
+<a class="font-label-caps text-label-caps text-primary hover:text-primary transition-colors hover:underline decoration-primary underline-offset-4 uppercase font-bold" href="#">Career Portal</a>
+</div>
+</div>
+</div>
+</footer>
+<style>
+        @keyframes scan {
+            0% { top: 0; opacity: 0; }
+            10% { opacity: 1; }
+            90% { opacity: 1; }
+            100% { top: 100%; opacity: 0; }
+        }
+        .no-scrollbar::-webkit-scrollbar {
+            display: none;
+        }
+        .no-scrollbar {
+            -ms-overflow-style: none;
+            scrollbar-width: none;
+        }
+    </style>
+<script>
+        // Micro-interaction for form inputs
+        const inputs = document.querySelectorAll('input, select, textarea');
+        inputs.forEach(input => {
+            input.addEventListener('focus', () => {
+                input.parentElement.querySelector('label').classList.add('text-accent-orange');
+            });
+            input.addEventListener('blur', () => {
+                if (!input.value) {
+                    input.parentElement.querySelector('label').classList.remove('text-accent-orange');
+                }
+            });
+        });
+
+        // Simple parallax effect for hero elements
+        window.addEventListener('scroll', () => {
+            const scrolled = window.pageYOffset;
+            const heroText = document.querySelector('h1');
+            if(heroText) {
+                heroText.style.transform = `translateY(${scrolled * 0.1}px)`;
+            }
+        });
+    </script>
+</body></html>

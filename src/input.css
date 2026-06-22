@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 /* ============================================================
    Shivayu Aerospace: custom layer on top of Tailwind Play CDN
    Design system: Boeing-style light theme (white + Boeing blue #0033A1)

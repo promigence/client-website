@@ -86,6 +86,99 @@ body {
 
 html { scroll-behavior: smooth; }
 
+/* ============================================================
+   Additive enhancements (v2) - non-destructive
+   ============================================================ */
+
+/* scroll progress bar */
+#scrollProgress {
+  position: fixed; top: 0; left: 0; height: 3px; width: 0; z-index: 60;
+  background: linear-gradient(90deg, var(--accent), #ffb454);
+  box-shadow: 0 0 10px rgba(255, 107, 53, 0.6);
+  transition: width .08s linear;
+}
+
+/* active nav link (scrollspy) */
+header nav a.nav-active { color: var(--accent); }
+
+/* gentle hover lift for content cards (opt out with .no-lift) */
+.glass-panel, .panel-solid {
+  transition: transform .35s cubic-bezier(.22, 1, .36, 1), box-shadow .35s, border-color .3s;
+}
+.glass-panel:not(.no-lift):hover,
+.panel-solid:not(.no-lift):hover {
+  transform: translateY(-5px);
+  box-shadow: 0 18px 40px -18px rgba(0, 0, 0, .7), 0 0 22px -10px rgba(255, 107, 53, .35);
+}
+
+/* hero HUD coordinate readout */
+.hero-hud {
+  position: absolute; top: 7rem; right: 1.5rem; z-index: 10;
+  text-align: right; line-height: 1.5; opacity: .7;
+  border-right: 2px solid rgba(255, 107, 53, .4); padding-right: .75rem;
+}
+
+/* hero scroll cue */
+.scroll-cue { position: absolute; bottom: 1.5rem; left: 50%; transform: translateX(-50%); z-index: 10; }
+.scroll-cue .material-symbols-outlined { animation: cueBounce 1.8s ease-in-out infinite; }
+@keyframes cueBounce { 0%, 100% { transform: translateY(0); opacity: .5; } 50% { transform: translateY(6px); opacity: 1; } }
+
+/* back to top */
+#toTop {
+  position: fixed; bottom: 24px; right: 24px; z-index: 50;
+  display: grid; place-items: center; width: 46px; height: 46px;
+  border: 1px solid rgba(192, 192, 192, .3); background: rgba(17, 34, 64, .85);
+  backdrop-filter: blur(8px); color: #e1e3e4;
+  opacity: 0; pointer-events: none; transform: translateY(10px);
+  transition: opacity .3s, transform .3s, border-color .2s, color .2s;
+}
+#toTop.show { opacity: 1; pointer-events: auto; transform: none; }
+#toTop:hover { border-color: var(--accent); color: var(--accent); }
+
+/* ============================================================
+   Section rhythm / tonal layering (v3) - premium feel
+   ============================================================ */
+
+/* near-black band (sits clearly darker than the navy base) */
+.tone-deep { background-color: #05090f; }
+
+/* deep band with a faint orange ambient glow */
+.tone-glow { position: relative; background-color: #070d18; }
+.tone-glow::before {
+  content: ""; position: absolute; inset: 0; z-index: 0; pointer-events: none;
+  background: radial-gradient(55% 55% at 78% 18%, rgba(255, 107, 53, 0.12), transparent 70%);
+}
+.tone-glow > * { position: relative; z-index: 1; }
+
+/* crisp hairline seam at the top of a section */
+.seam-top { position: relative; }
+.seam-top::after {
+  content: ""; position: absolute; top: 0; left: 50%; transform: translateX(-50%);
+  width: min(100% - 2.5rem, 1440px); height: 1px;
+  background: linear-gradient(to right, transparent, rgba(192, 192, 192, 0.22), transparent);
+}
+
+/* numbered section index label */
+.sec-index { display: flex; align-items: center; gap: .75rem; margin-bottom: .9rem; }
+.sec-index .n { font-family: "JetBrains Mono", monospace; font-size: .9rem; color: rgba(255, 107, 53, .65); }
+.sec-index .bar { height: 1px; width: 2rem; background: rgba(255, 107, 53, .45); }
+.sec-index .t { font-family: "JetBrains Mono", monospace; font-size: .75rem; letter-spacing: .15em; text-transform: uppercase; color: var(--accent); }
+
+/* full-bleed parallax image band */
+.parallax-band { position: relative; overflow: hidden; }
+.parallax-band .parallax-bg {
+  position: absolute; left: 0; right: 0; top: -20%; height: 140%; z-index: 0;
+  background-size: cover; background-position: center; will-change: transform;
+}
+.parallax-band .pb-overlay { position: absolute; inset: 0; z-index: 1; }
+.parallax-band .pb-content { position: relative; z-index: 2; }
+
+/* gentle proximity scroll-snap (non-forced; desktop only) */
+@media (min-width: 768px) and (prefers-reduced-motion: no-preference) {
+  html { scroll-snap-type: y proximity; scroll-padding-top: 80px; }
+  main > section { scroll-snap-align: start; }
+}
+
 @media (prefers-reduced-motion: reduce) {
   * { animation: none !important; scroll-behavior: auto; }
   .reveal { opacity: 1; transform: none; }

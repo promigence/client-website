@@ -17,13 +17,13 @@
       theme: {
         extend: {
           colors: {
-            accent: "#FF6B35",
+            accent: "#0033A1",
             navy: "#0A192F",
             surface: "#112240",
-            steel: "#b9c7e4",
-            "on-surface": "#e1e3e4",
-            "on-variant": "#c5c6cd",
-            outline: "#8f9097",
+            steel: "#0033A1",
+            "on-surface": "#0A2342",
+            "on-variant": "#45566F",
+            outline: "#6E7E98",
           },
           fontFamily: {
             display: ["Montserrat", "sans-serif"],
@@ -43,7 +43,7 @@
   <div class="tech-grid-overlay"></div>
 
   <!-- ===================== HEADER ===================== -->
-  <header id="top" class="sticky top-0 z-40 w-full border-b border-white/10 bg-navy/90 backdrop-blur-md">
+  <header id="top" class="sticky top-0 z-40 w-full border-b border-black/10 bg-white/85 backdrop-blur-md">
     <div class="mx-auto flex h-20 max-w-container items-center justify-between px-5 lg:px-16">
       <a href="#top" class="flex items-center gap-3">
         <span class="material-symbols-outlined text-accent text-[30px] ms-fill">flight</span>
@@ -69,12 +69,12 @@
     </div>
 
     <!-- mobile menu -->
-    <div id="mobileMenu" class="mobile-menu lg:hidden border-t border-white/10 bg-navy/95 backdrop-blur-md">
+    <div id="mobileMenu" class="mobile-menu lg:hidden border-t border-black/10 bg-white/95 backdrop-blur-md">
       <nav class="flex flex-col px-5 py-2">
-        <a href="#capabilities" class="border-b border-white/5 py-3 font-mono text-xs uppercase tracking-widest text-on-variant">Capabilities</a>
-        <a href="#leadership" class="border-b border-white/5 py-3 font-mono text-xs uppercase tracking-widest text-on-variant">Leadership</a>
-        <a href="#quality" class="border-b border-white/5 py-3 font-mono text-xs uppercase tracking-widest text-on-variant">Quality</a>
-        <a href="#careers" class="border-b border-white/5 py-3 font-mono text-xs uppercase tracking-widest text-on-variant">Careers</a>
+        <a href="#capabilities" class="border-b border-black/5 py-3 font-mono text-xs uppercase tracking-widest text-on-variant">Capabilities</a>
+        <a href="#leadership" class="border-b border-black/5 py-3 font-mono text-xs uppercase tracking-widest text-on-variant">Leadership</a>
+        <a href="#quality" class="border-b border-black/5 py-3 font-mono text-xs uppercase tracking-widest text-on-variant">Quality</a>
+        <a href="#careers" class="border-b border-black/5 py-3 font-mono text-xs uppercase tracking-widest text-on-variant">Careers</a>
         <a href="#contact" class="py-3 font-mono text-xs uppercase tracking-widest text-on-variant">Contact</a>
         <a href="#contact" class="btn-primary my-3 px-5 py-3 text-center font-mono text-xs uppercase tracking-widest">Get a Quote</a>
       </nav>
@@ -88,24 +88,24 @@
       <div class="absolute inset-0 bg-gradient-to-t from-navy via-transparent to-navy/40"></div>
 
       <!-- HUD coordinate readout (decorative) -->
-      <div class="hero-hud hidden font-mono text-[10px] uppercase tracking-widest text-accent lg:block">
+      <div class="hero-hud hidden font-mono text-[10px] uppercase tracking-widest text-white/70 lg:block">
         <span class="block">LAT 13.1007° N</span>
         <span class="block">LONG 77.5963° E</span>
-        <span class="block text-on-variant/70">YELAHANKA · BLR</span>
+        <span class="block text-white/40">YELAHANKA · BLR</span>
       </div>
 
       <div class="relative z-10 mx-auto w-full max-w-container px-5 py-24 lg:px-16">
         <div class="max-w-3xl">
-          <div class="mb-6 inline-flex items-center gap-2 rounded-sm border border-accent/30 bg-accent/5 px-3 py-1.5 text-accent">
+          <div class="mb-6 inline-flex items-center gap-2 rounded-sm border border-white/25 bg-white/10 px-3 py-1.5 text-white">
             <span class="material-symbols-outlined text-[16px] ms-fill">rocket_launch</span>
             <span class="font-mono text-xs uppercase tracking-[0.2em]">Aerospace · Aviation · Defence</span>
           </div>
 
-          <h1 class="font-display text-4xl font-extrabold uppercase leading-[0.95] sm:text-6xl lg:text-7xl">
-            Precision Engineered<br /><span class="text-accent">for the Future of Flight</span>
+          <h1 class="font-display text-4xl font-extrabold uppercase leading-[0.95] text-white sm:text-6xl lg:text-7xl">
+            Precision Engineered<br /><span class="text-[#6AA6FF]">for the Future of Flight</span>
           </h1>
 
-          <p class="mt-7 max-w-xl font-body text-base leading-relaxed text-on-variant sm:text-lg">
+          <p class="mt-7 max-w-xl font-body text-base leading-relaxed text-white/85 sm:text-lg">
             Shivayu Aerospace designs and manufactures high-precision mechanical components for the
             Aerospace, Aviation and Defence industries. A one-stop solution from design to finished
             part. Veteran-led, with military-grade discipline applied to every micron we machine.
@@ -115,20 +115,20 @@
             <a href="#contact" class="btn-primary flex items-center gap-2 rounded-sm px-8 py-4 font-mono text-xs uppercase tracking-widest">
               Request a Quote <span class="material-symbols-outlined text-[18px]">north_east</span>
             </a>
-            <a href="#capabilities" class="btn-outline rounded-sm px-8 py-4 font-mono text-xs uppercase tracking-widest">
+            <a href="#capabilities" class="rounded-sm border border-white/40 px-8 py-4 font-mono text-xs uppercase tracking-widest text-white transition-all hover:bg-white/10">
               Explore Capabilities
             </a>
           </div>
         </div>
       </div>
 
-      <a href="#capabilities" class="scroll-cue text-on-variant transition-colors hover:text-accent" aria-label="Scroll to capabilities">
+      <a href="#capabilities" class="scroll-cue text-white/70 transition-colors hover:text-white" aria-label="Scroll to capabilities">
         <span class="material-symbols-outlined text-3xl">keyboard_arrow_down</span>
       </a>
     </section>
 
     <!-- ===================== STATS TICKER ===================== -->
-    <div class="border-y border-white/10 bg-navy/60 py-6">
+    <div class="border-y border-black/10 bg-white py-6">
       <div class="mx-auto flex max-w-container items-center justify-between gap-10 overflow-x-auto px-5 no-scrollbar lg:px-16">
         <div class="flex shrink-0 flex-col">
           <span class="font-mono text-[10px] uppercase tracking-widest text-outline">Precision Standard</span>
@@ -196,7 +196,7 @@
             <h4 class="font-display text-lg font-semibold">Consulting Services</h4>
             <p class="mt-2 text-sm text-on-variant">Veteran and industry experts advising on leadership development, business strategy and joint ventures.</p>
           </div>
-          <a href="#contact" class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-white/20 transition-all group-hover:border-accent group-hover:bg-accent group-hover:text-navy">
+          <a href="#contact" class="flex h-12 w-12 shrink-0 items-center justify-center rounded-full border border-black/20 transition-all group-hover:border-accent group-hover:bg-accent group-hover:text-white">
             <span class="material-symbols-outlined">arrow_forward</span>
           </a>
         </div>
@@ -204,7 +204,7 @@
     </section>
 
     <!-- ===================== LEADERSHIP ===================== -->
-    <section id="leadership" class="tone-deep border-y border-white/10 py-24 lg:py-32">
+    <section id="leadership" class="tone-deep border-y border-black/10 py-24 lg:py-32">
       <div class="mx-auto grid max-w-container grid-cols-1 items-center gap-16 px-5 md:grid-cols-2 lg:px-16">
         <div class="relative reveal mx-auto w-full max-w-sm md:mx-0">
           <div class="absolute -left-4 -top-4 h-24 w-24 border-l-2 border-t-2 border-accent"></div>
@@ -231,7 +231,7 @@
             aviation, aerospace, management and leadership expert. His vision anchors Shivayu's
             commitment to precision, traceability and uncompromising quality.
           </p>
-          <div class="mt-10 grid grid-cols-2 gap-8 border-t border-white/10 pt-8">
+          <div class="mt-10 grid grid-cols-2 gap-8 border-t border-black/10 pt-8">
             <div>
               <p class="font-display text-3xl font-bold text-steel"><span class="count" data-target="40" data-decimals="0">0</span>+</p>
               <p class="font-mono text-xs uppercase tracking-widest text-on-variant">Years of Leadership</p>
@@ -260,17 +260,17 @@
           <span class="block font-display text-base font-semibold uppercase">CNC Machining</span>
           <div class="mt-4 flex items-center gap-2"><span class="h-2 w-2 animate-pulse rounded-full bg-emerald-500"></span><span class="font-mono text-xs">Active</span></div>
         </div>
-        <div class="glass-panel reveal border-l-2 border-white/20 p-6">
+        <div class="glass-panel reveal border-l-2 border-black/20 p-6">
           <span class="mb-1 block font-mono text-[10px] uppercase text-outline">Department</span>
           <span class="block font-display text-base font-semibold uppercase">Quality &amp; Inspection</span>
           <div class="mt-4 flex items-center gap-2"><span class="h-2 w-2 rounded-full bg-emerald-500"></span><span class="font-mono text-xs">Compliant</span></div>
         </div>
-        <div class="glass-panel reveal border-l-2 border-white/20 p-6">
+        <div class="glass-panel reveal border-l-2 border-black/20 p-6">
           <span class="mb-1 block font-mono text-[10px] uppercase text-outline">Department</span>
           <span class="block font-display text-base font-semibold uppercase">Design &amp; Engineering</span>
           <div class="mt-4 flex items-center gap-2"><span class="h-2 w-2 rounded-full bg-emerald-500"></span><span class="font-mono text-xs">Optimal</span></div>
         </div>
-        <div class="glass-panel reveal border-l-2 border-white/20 p-6">
+        <div class="glass-panel reveal border-l-2 border-black/20 p-6">
           <span class="mb-1 block font-mono text-[10px] uppercase text-outline">Department</span>
           <span class="block font-display text-base font-semibold uppercase">Supply &amp; Delivery</span>
           <div class="mt-4 flex items-center gap-2"><span class="h-2 w-2 rounded-full bg-accent"></span><span class="font-mono text-xs">On Schedule</span></div>
@@ -279,7 +279,7 @@
     </section>
 
     <!-- ===================== QUALITY & STANDARDS ===================== -->
-    <section id="quality" class="tone-glow border-y border-white/10 py-24 lg:py-32">
+    <section id="quality" class="tone-glow border-y border-black/10 py-24 lg:py-32">
       <div class="mx-auto max-w-container px-5 lg:px-16">
         <div class="mb-14 max-w-2xl reveal">
           <div class="sec-index"><span class="n">03</span><span class="bar"></span><span class="t">Quality Assurance</span></div>
@@ -299,24 +299,24 @@
               <div class="absolute right-0 top-0 h-20 w-20 -translate-y-8 translate-x-8 rounded-full bg-accent/10 blur-2xl transition-opacity group-hover:opacity-100"></div>
               <div class="mb-8 flex items-start justify-between">
                 <span class="material-symbols-outlined text-5xl text-accent ms-fill">verified_user</span>
-                <span class="rounded-sm border border-emerald-400/30 bg-emerald-900/30 px-2.5 py-1 font-mono text-[10px] font-bold uppercase tracking-wider text-emerald-400">Certified</span>
+                <span class="rounded-sm border border-emerald-300 bg-emerald-100 px-2.5 py-1 font-mono text-[10px] font-bold uppercase tracking-wider text-emerald-700">Certified</span>
               </div>
-              <div class="mb-3 inline-flex w-fit rounded-sm border border-white/10 bg-[#071221] px-3 py-1 font-mono text-xs text-steel">ID: AS-9100 REV D</div>
+              <div class="mb-3 inline-flex w-fit rounded-sm border border-black/10 bg-[#EEF2F8] px-3 py-1 font-mono text-xs text-steel">ID: AS-9100 REV D</div>
               <h4 class="mb-3 font-display text-xl font-semibold">AS9100 Rev D</h4>
               <p class="mb-8 flex-grow text-sm text-on-variant">Quality Management Systems: Requirements for Aviation, Space and Defence Organizations. The aerospace industry standard, built on ISO 9001 with additional sector requirements for full lifecycle traceability.</p>
-              <a href="#contact" class="w-full border border-white/20 py-3 text-center font-mono text-xs uppercase tracking-widest transition-all hover:border-accent hover:text-accent">View Certificate</a>
+              <a href="#contact" class="w-full border border-black/20 py-3 text-center font-mono text-xs uppercase tracking-widest transition-all hover:border-accent hover:text-accent">View Certificate</a>
             </div>
             <!-- ISO 9001 -->
             <div class="panel-solid group relative flex flex-col overflow-hidden p-8 transition-colors hover:border-accent/50 reveal">
               <div class="absolute right-0 top-0 h-20 w-20 -translate-y-8 translate-x-8 rounded-full bg-accent/10 blur-2xl transition-opacity group-hover:opacity-100"></div>
               <div class="mb-8 flex items-start justify-between">
                 <span class="material-symbols-outlined text-5xl text-accent ms-fill">workspace_premium</span>
-                <span class="rounded-sm border border-emerald-400/30 bg-emerald-900/30 px-2.5 py-1 font-mono text-[10px] font-bold uppercase tracking-wider text-emerald-400">Certified</span>
+                <span class="rounded-sm border border-emerald-300 bg-emerald-100 px-2.5 py-1 font-mono text-[10px] font-bold uppercase tracking-wider text-emerald-700">Certified</span>
               </div>
-              <div class="mb-3 inline-flex w-fit rounded-sm border border-white/10 bg-[#071221] px-3 py-1 font-mono text-xs text-steel">ID: ISO-9001:2015</div>
+              <div class="mb-3 inline-flex w-fit rounded-sm border border-black/10 bg-[#EEF2F8] px-3 py-1 font-mono text-xs text-steel">ID: ISO-9001:2015</div>
               <h4 class="mb-3 font-display text-xl font-semibold">ISO 9001:2015</h4>
               <p class="mb-8 flex-grow text-sm text-on-variant">The global standard for quality management systems, ensuring consistent, high-grade output and a culture of continuous improvement across every process and department.</p>
-              <a href="#contact" class="w-full border border-white/20 py-3 text-center font-mono text-xs uppercase tracking-widest transition-all hover:border-accent hover:text-accent">View Certificate</a>
+              <a href="#contact" class="w-full border border-black/20 py-3 text-center font-mono text-xs uppercase tracking-widest transition-all hover:border-accent hover:text-accent">View Certificate</a>
             </div>
           </div>
         </div>
@@ -327,7 +327,7 @@
           <div class="panel-solid reveal flex flex-col p-8 transition-colors hover:border-accent/50">
             <div class="mb-10 flex items-start justify-between">
               <span class="material-symbols-outlined text-4xl text-accent">verified_user</span>
-              <span class="rounded-sm border border-white/10 bg-[#071221] px-3 py-1 font-mono text-xs text-steel">QMS</span>
+              <span class="rounded-sm border border-black/10 bg-[#EEF2F8] px-3 py-1 font-mono text-xs text-steel">QMS</span>
             </div>
             <h3 class="mb-3 font-display text-lg font-semibold">Quality Management System</h3>
             <p class="text-sm text-on-variant">Documented, auditable processes governing every job from quotation through dispatch.</p>
@@ -335,7 +335,7 @@
           <div class="panel-solid reveal flex flex-col p-8 transition-colors hover:border-accent/50">
             <div class="mb-10 flex items-start justify-between">
               <span class="material-symbols-outlined text-4xl text-accent">account_tree</span>
-              <span class="rounded-sm border border-white/10 bg-[#071221] px-3 py-1 font-mono text-xs text-steel">TRACE</span>
+              <span class="rounded-sm border border-black/10 bg-[#EEF2F8] px-3 py-1 font-mono text-xs text-steel">TRACE</span>
             </div>
             <h3 class="mb-3 font-display text-lg font-semibold">Full Traceability</h3>
             <p class="text-sm text-on-variant">Material and process tracking across the complete component life cycle.</p>
@@ -343,7 +343,7 @@
           <div class="panel-solid reveal flex flex-col p-8 transition-colors hover:border-accent/50">
             <div class="mb-10 flex items-start justify-between">
               <span class="material-symbols-outlined text-4xl text-accent">biotech</span>
-              <span class="rounded-sm border border-white/10 bg-[#071221] px-3 py-1 font-mono text-xs text-steel">NDT</span>
+              <span class="rounded-sm border border-black/10 bg-[#EEF2F8] px-3 py-1 font-mono text-xs text-steel">NDT</span>
             </div>
             <h3 class="mb-3 font-display text-lg font-semibold">NDT &amp; Inspection</h3>
             <p class="text-sm text-on-variant">Dye penetrant, visual and dimensional inspection on every batch.</p>
@@ -351,7 +351,7 @@
           <div class="panel-solid reveal flex flex-col p-8 transition-colors hover:border-accent/50">
             <div class="mb-10 flex items-start justify-between">
               <span class="material-symbols-outlined text-4xl text-accent">straighten</span>
-              <span class="rounded-sm border border-white/10 bg-[#071221] px-3 py-1 font-mono text-xs text-steel">CMM</span>
+              <span class="rounded-sm border border-black/10 bg-[#EEF2F8] px-3 py-1 font-mono text-xs text-steel">CMM</span>
             </div>
             <h3 class="mb-3 font-display text-lg font-semibold">Precision Metrology</h3>
             <p class="text-sm text-on-variant">CMM and high-accuracy measurement to verify sub-micron tolerances.</p>
@@ -359,7 +359,7 @@
           <div class="panel-solid reveal flex flex-col p-8 transition-colors hover:border-accent/50">
             <div class="mb-10 flex items-start justify-between">
               <span class="material-symbols-outlined text-4xl text-accent">description</span>
-              <span class="rounded-sm border border-white/10 bg-[#071221] px-3 py-1 font-mono text-xs text-steel">MTR</span>
+              <span class="rounded-sm border border-black/10 bg-[#EEF2F8] px-3 py-1 font-mono text-xs text-steel">MTR</span>
             </div>
             <h3 class="mb-3 font-display text-lg font-semibold">Material Certification</h3>
             <p class="text-sm text-on-variant">Certificate of Conformance and material test reports delivered with parts.</p>
@@ -367,7 +367,7 @@
           <div class="panel-solid reveal flex flex-col p-8 transition-colors hover:border-accent/50">
             <div class="mb-10 flex items-start justify-between">
               <span class="material-symbols-outlined text-4xl text-accent">fact_check</span>
-              <span class="rounded-sm border border-white/10 bg-[#071221] px-3 py-1 font-mono text-xs text-steel">FAI</span>
+              <span class="rounded-sm border border-black/10 bg-[#EEF2F8] px-3 py-1 font-mono text-xs text-steel">FAI</span>
             </div>
             <h3 class="mb-3 font-display text-lg font-semibold">First-Article Inspection</h3>
             <p class="text-sm text-on-variant">Documented first-article verification before any production run begins.</p>
@@ -398,8 +398,8 @@
               <p class="text-xs text-on-variant">CoC and full material test report delivered with the part.</p>
             </div>
           </div>
-          <div class="relative mt-12 h-px w-full bg-white/10">
-            <div class="absolute h-px bg-accent" style="width:75%; box-shadow:0 0 10px #FF6B35"></div>
+          <div class="relative mt-12 h-px w-full bg-black/10">
+            <div class="absolute h-px bg-accent" style="width:75%; box-shadow:0 0 10px #0033A1"></div>
             <div class="absolute left-[75%] top-1/2 h-4 w-px -translate-y-1/2 bg-accent"></div>
           </div>
         </div>
@@ -407,14 +407,14 @@
     </section>
 
     <!-- ===================== PARALLAX STATEMENT BAND ===================== -->
-    <section class="parallax-band border-y border-white/10">
+    <section class="parallax-band border-y border-black/10">
       <div class="parallax-bg" data-parallax style="background-image:url('assets/hero-alt-fan.jpg')"></div>
       <div class="pb-overlay" style="background:linear-gradient(to right, rgba(5,9,15,0.94) 0%, rgba(5,9,15,0.72) 55%, rgba(5,9,15,0.88) 100%)"></div>
       <div class="pb-content mx-auto max-w-container px-5 py-28 lg:px-16 lg:py-40">
         <div class="max-w-2xl reveal">
-          <p class="mb-4 font-mono text-xs uppercase tracking-[0.2em] text-accent">// Precision is not negotiable</p>
-          <h2 class="font-display text-4xl font-bold uppercase leading-[1.05] sm:text-5xl lg:text-6xl">Zero margin<br />for error.</h2>
-          <p class="mt-6 max-w-xl text-base text-on-variant sm:text-lg">Every component we ship is machined, measured and certified to tolerances where "close enough" does not exist. That is the standard flight depends on.</p>
+          <p class="mb-4 font-mono text-xs uppercase tracking-[0.2em] text-[#6AA6FF]">// Precision is not negotiable</p>
+          <h2 class="font-display text-4xl font-bold uppercase leading-[1.05] text-white sm:text-5xl lg:text-6xl">Zero margin<br />for error.</h2>
+          <p class="mt-6 max-w-xl text-base text-white/80 sm:text-lg">Every component we ship is machined, measured and certified to tolerances where "close enough" does not exist. That is the standard flight depends on.</p>
         </div>
       </div>
     </section>
@@ -426,35 +426,35 @@
         <h2 class="font-display text-3xl font-bold sm:text-4xl">Where precision is produced.</h2>
       </div>
       <div class="grid grid-cols-1 gap-4 md:grid-cols-4">
-        <div class="group relative h-[400px] overflow-hidden border border-white/10 reveal md:col-span-2">
+        <div class="group relative h-[400px] overflow-hidden border border-black/10 reveal md:col-span-2">
           <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" style="background-image:url('assets/facility-assembly.jpg')"></div>
           <div class="absolute inset-0 bg-gradient-to-t from-navy to-transparent opacity-70"></div>
           <div class="absolute bottom-0 left-0 p-8">
-            <span class="mb-2 block font-mono text-xs uppercase tracking-widest text-accent">Zone A-1</span>
-            <h4 class="font-display text-lg font-semibold uppercase">Main Assembly Floor</h4>
+            <span class="mb-2 block font-mono text-xs uppercase tracking-widest text-white/80">Zone A-1</span>
+            <h4 class="font-display text-lg font-semibold uppercase text-white">Main Assembly Floor</h4>
           </div>
         </div>
-        <div class="group relative h-[400px] overflow-hidden border border-white/10 reveal">
+        <div class="group relative h-[400px] overflow-hidden border border-black/10 reveal">
           <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" style="background-image:url('assets/facility-machining.jpg')"></div>
           <div class="absolute inset-0 bg-gradient-to-t from-navy to-transparent opacity-70"></div>
           <div class="absolute bottom-0 left-0 p-8">
-            <span class="mb-2 block font-mono text-xs uppercase tracking-widest text-accent">Zone M-4</span>
-            <h4 class="font-display text-lg font-semibold uppercase">Precision Machining</h4>
+            <span class="mb-2 block font-mono text-xs uppercase tracking-widest text-white/80">Zone M-4</span>
+            <h4 class="font-display text-lg font-semibold uppercase text-white">Precision Machining</h4>
           </div>
         </div>
-        <div class="group relative h-[400px] overflow-hidden border border-white/10 reveal">
+        <div class="group relative h-[400px] overflow-hidden border border-black/10 reveal">
           <div class="absolute inset-0 bg-cover bg-center transition-transform duration-700 group-hover:scale-110" style="background-image:url('assets/facility-design.jpg')"></div>
           <div class="absolute inset-0 bg-gradient-to-t from-navy to-transparent opacity-70"></div>
           <div class="absolute bottom-0 left-0 p-8">
-            <span class="mb-2 block font-mono text-xs uppercase tracking-widest text-accent">Zone D-9</span>
-            <h4 class="font-display text-lg font-semibold uppercase">Design Hub</h4>
+            <span class="mb-2 block font-mono text-xs uppercase tracking-widest text-white/80">Zone D-9</span>
+            <h4 class="font-display text-lg font-semibold uppercase text-white">Design Hub</h4>
           </div>
         </div>
       </div>
     </section>
 
     <!-- ===================== CAREERS ===================== -->
-    <section id="careers" class="tone-deep border-y border-white/10 py-24 lg:py-32">
+    <section id="careers" class="tone-deep border-y border-black/10 py-24 lg:py-32">
       <div class="mx-auto max-w-container px-5 lg:px-16">
         <div class="mb-14 flex items-end justify-between reveal">
           <div>
@@ -472,10 +472,10 @@
             <h3 class="mb-4 font-display text-lg font-semibold uppercase">CNC Machinist</h3>
             <p class="mb-8 flex-grow text-sm text-on-variant">Operation of multi-axis CNC systems for high-precision aerospace components, with expert G-code and tolerance verification.</p>
             <div class="mb-8 space-y-3">
-              <div class="flex items-center justify-between border-b border-white/10 pb-2"><span class="font-mono text-xs uppercase text-outline">Shift</span><span class="font-mono text-xs">Day / Night</span></div>
-              <div class="flex items-center justify-between border-b border-white/10 pb-2"><span class="font-mono text-xs uppercase text-outline">Location</span><span class="font-mono text-xs">Bengaluru</span></div>
+              <div class="flex items-center justify-between border-b border-black/10 pb-2"><span class="font-mono text-xs uppercase text-outline">Shift</span><span class="font-mono text-xs">Day / Night</span></div>
+              <div class="flex items-center justify-between border-b border-black/10 pb-2"><span class="font-mono text-xs uppercase text-outline">Location</span><span class="font-mono text-xs">Bengaluru</span></div>
             </div>
-            <a href="#contact" class="w-full border border-accent py-3 text-center font-mono text-xs uppercase tracking-widest text-accent transition-all hover:bg-accent hover:text-navy">Apply</a>
+            <a href="#contact" class="w-full border border-accent py-3 text-center font-mono text-xs uppercase tracking-widest text-accent transition-all hover:bg-accent hover:text-white">Apply</a>
           </div>
 
           <div class="glass-panel relative flex flex-col overflow-hidden border-accent/40 p-8 reveal">
@@ -484,8 +484,8 @@
             <h3 class="mb-4 font-display text-lg font-semibold uppercase">Quality Engineer</h3>
             <p class="mb-8 flex-grow text-sm text-on-variant">Implementing quality protocols and inspection oversight, managing CMM inspections for flight-critical hardware.</p>
             <div class="mb-8 space-y-3">
-              <div class="flex items-center justify-between border-b border-white/10 pb-2"><span class="font-mono text-xs uppercase text-outline">Dept</span><span class="font-mono text-xs">Assurance</span></div>
-              <div class="flex items-center justify-between border-b border-white/10 pb-2"><span class="font-mono text-xs uppercase text-outline">Tools</span><span class="font-mono text-xs">GD&amp;T / SPC</span></div>
+              <div class="flex items-center justify-between border-b border-black/10 pb-2"><span class="font-mono text-xs uppercase text-outline">Dept</span><span class="font-mono text-xs">Assurance</span></div>
+              <div class="flex items-center justify-between border-b border-black/10 pb-2"><span class="font-mono text-xs uppercase text-outline">Tools</span><span class="font-mono text-xs">GD&amp;T / SPC</span></div>
             </div>
             <a href="#contact" class="btn-primary w-full py-3 text-center font-mono text-xs uppercase tracking-widest">Apply</a>
           </div>
@@ -496,10 +496,10 @@
             <h3 class="mb-4 font-display text-lg font-semibold uppercase">Design Engineer</h3>
             <p class="mb-8 flex-grow text-sm text-on-variant">Leading component and tooling design, with a focus on design-for-manufacturability and topology optimisation.</p>
             <div class="mb-8 space-y-3">
-              <div class="flex items-center justify-between border-b border-white/10 pb-2"><span class="font-mono text-xs uppercase text-outline">Experience</span><span class="font-mono text-xs">5+ Years</span></div>
-              <div class="flex items-center justify-between border-b border-white/10 pb-2"><span class="font-mono text-xs uppercase text-outline">Stack</span><span class="font-mono text-xs">CAD / CAM</span></div>
+              <div class="flex items-center justify-between border-b border-black/10 pb-2"><span class="font-mono text-xs uppercase text-outline">Experience</span><span class="font-mono text-xs">5+ Years</span></div>
+              <div class="flex items-center justify-between border-b border-black/10 pb-2"><span class="font-mono text-xs uppercase text-outline">Stack</span><span class="font-mono text-xs">CAD / CAM</span></div>
             </div>
-            <a href="#contact" class="w-full border border-accent py-3 text-center font-mono text-xs uppercase tracking-widest text-accent transition-all hover:bg-accent hover:text-navy">Apply</a>
+            <a href="#contact" class="w-full border border-accent py-3 text-center font-mono text-xs uppercase tracking-widest text-accent transition-all hover:bg-accent hover:text-white">Apply</a>
           </div>
         </div>
       </div>
@@ -577,7 +577,7 @@
   </main>
 
   <!-- ===================== FOOTER ===================== -->
-  <footer class="border-t border-white/10 bg-black/40">
+  <footer class="border-t border-black/10 bg-[#E8EDF5]">
     <div class="mx-auto grid max-w-container grid-cols-1 gap-12 px-5 py-16 lg:grid-cols-3 lg:px-16">
       <div>
         <div class="mb-4 flex items-center gap-3">
@@ -586,13 +586,13 @@
         </div>
         <p class="mb-6 max-w-xs text-sm text-on-variant"><em>Manufacturing Creativity.</em> Precision components for Aerospace, Aviation &amp; Defence.</p>
         <div class="flex gap-3">
-          <a href="https://www.facebook.com/profile.php?id=100008339559764" target="_blank" rel="noopener" aria-label="Facebook" class="flex h-10 w-10 items-center justify-center border border-white/15 text-on-variant transition-all hover:border-accent hover:text-accent">
+          <a href="https://www.facebook.com/profile.php?id=100008339559764" target="_blank" rel="noopener" aria-label="Facebook" class="flex h-10 w-10 items-center justify-center border border-black/15 text-on-variant transition-all hover:border-accent hover:text-accent">
             <svg class="h-[18px] w-[18px]" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M24 12.073c0-6.627-5.373-12-12-12s-12 5.373-12 12c0 5.99 4.388 10.954 10.125 11.854v-8.385H7.078v-3.47h3.047V9.43c0-3.007 1.792-4.669 4.533-4.669 1.312 0 2.686.235 2.686.235v2.953H15.83c-1.491 0-1.956.925-1.956 1.874v2.25h3.328l-.532 3.47h-2.796v8.385C19.612 23.027 24 18.062 24 12.073z"/></svg>
           </a>
-          <a href="https://wa.me/9538804144" target="_blank" rel="noopener" aria-label="WhatsApp" class="flex h-10 w-10 items-center justify-center border border-white/15 text-on-variant transition-all hover:border-accent hover:text-accent">
+          <a href="https://wa.me/9538804144" target="_blank" rel="noopener" aria-label="WhatsApp" class="flex h-10 w-10 items-center justify-center border border-black/15 text-on-variant transition-all hover:border-accent hover:text-accent">
             <svg class="h-[18px] w-[18px]" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.149-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.71.306 1.263.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 0 1-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 0 1-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 0 1 2.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0 0 12.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 0 0 5.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 0 0-3.48-8.413z"/></svg>
           </a>
-          <a href="https://in.linkedin.com/in/elavunkal-raman-rajappan-017693112" target="_blank" rel="noopener" aria-label="LinkedIn" class="flex h-10 w-10 items-center justify-center border border-white/15 text-on-variant transition-all hover:border-accent hover:text-accent">
+          <a href="https://in.linkedin.com/in/elavunkal-raman-rajappan-017693112" target="_blank" rel="noopener" aria-label="LinkedIn" class="flex h-10 w-10 items-center justify-center border border-black/15 text-on-variant transition-all hover:border-accent hover:text-accent">
             <svg class="h-[18px] w-[18px]" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.225 0z"/></svg>
           </a>
         </div>
@@ -616,7 +616,7 @@
       </div>
     </div>
 
-    <div class="border-t border-white/10 py-6">
+    <div class="border-t border-black/10 py-6">
       <div class="mx-auto max-w-container px-5 lg:px-16">
         <p class="font-mono text-[11px] uppercase tracking-widest text-outline">© <span id="year"></span> Shivayu Aerospace Components &amp; Moulds. Precision engineered for extreme environments.</p>
       </div>

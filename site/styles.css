@@ -1,15 +1,15 @@
 /* ============================================================
    Shivayu Aerospace: custom layer on top of Tailwind Play CDN
-   Design system: "Aeronautical Excellence" (dark navy + safety orange)
+   Design system: Boeing-style light theme (white + Boeing blue #0033A1)
    ============================================================ */
 
-:root { --accent: #FF6B35; }
+:root { --accent: #0033A1; }
 
 body {
-  background-color: #0A192F;
-  background-image: radial-gradient(circle at 1px 1px, #112240 1px, transparent 0);
+  background-color: #F2F5FA;
+  background-image: radial-gradient(circle at 1px 1px, rgba(0, 51, 161, 0.07) 1px, transparent 0);
   background-size: 32px 32px;
-  color: #e1e3e4;
+  color: #0A2342;
   font-family: "Inter", system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
@@ -29,42 +29,41 @@ body {
 .tech-grid-overlay {
   position: fixed; inset: 0; pointer-events: none; z-index: 1;
   background-image:
-    linear-gradient(to right, rgba(192, 192, 192, 0.04) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(192, 192, 192, 0.04) 1px, transparent 1px);
+    linear-gradient(to right, rgba(0, 51, 161, 0.045) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 51, 161, 0.045) 1px, transparent 1px);
   background-size: 128px 128px;
 }
 
 /* surfaces */
 .glass-panel {
-  background: rgba(17, 34, 64, 0.7);
-  backdrop-filter: blur(10px);
-  -webkit-backdrop-filter: blur(10px);
-  border: 1px solid rgba(192, 192, 192, 0.15);
+  background: #FFFFFF;
+  border: 1px solid rgba(0, 51, 161, 0.12);
+  box-shadow: 0 1px 2px rgba(10, 35, 66, 0.05);
 }
-.panel-solid { background: #112240; border: 1px solid rgba(192, 192, 192, 0.2); }
+.panel-solid { background: #FFFFFF; border: 1px solid rgba(0, 51, 161, 0.12); box-shadow: 0 1px 2px rgba(10, 35, 66, 0.05); }
 .input-dark {
-  background: #071221; border: 1px solid rgba(192, 192, 192, 0.2);
-  color: #e1e3e4; outline: none; transition: border-color .2s, box-shadow .2s;
+  background: #FFFFFF; border: 1px solid rgba(0, 51, 161, 0.22);
+  color: #0A2342; outline: none; transition: border-color .2s, box-shadow .2s;
 }
-.input-dark::placeholder { color: #5b6b86; }
-.input-dark:focus { border-color: var(--accent); box-shadow: 0 0 0 1px var(--accent); }
+.input-dark::placeholder { color: #9AA8BD; }
+.input-dark:focus { border-color: var(--accent); box-shadow: 0 0 0 2px rgba(0, 51, 161, 0.18); }
 
 /* buttons */
 .btn-primary {
-  background: var(--accent); color: #0A192F; font-weight: 700;
+  background: var(--accent); color: #FFFFFF; font-weight: 700;
   transition: all .2s cubic-bezier(.4, 0, .2, 1);
 }
-.btn-primary:hover { filter: brightness(1.08); transform: translateY(-1px); box-shadow: 0 0 20px rgba(255, 107, 53, .3); }
+.btn-primary:hover { filter: brightness(1.08); transform: translateY(-1px); box-shadow: 0 8px 22px -8px rgba(0, 51, 161, .5); }
 .btn-primary:active { transform: scale(.98); }
 .btn-outline {
-  border: 1px solid rgba(192, 192, 192, 0.4); color: #e1e3e4; transition: all .2s;
+  border: 1px solid rgba(0, 51, 161, 0.4); color: #0A2342; transition: all .2s;
 }
-.btn-outline:hover { background: rgba(255, 255, 255, .05); border-color: var(--accent); color: var(--accent); }
+.btn-outline:hover { background: rgba(0, 51, 161, .06); border-color: var(--accent); color: var(--accent); }
 
 /* scanner line for the contact panel */
 .scan-line {
   position: absolute; top: 0; left: 0; width: 100%; height: 2px;
-  background: rgba(255, 107, 53, 0.5);
+  background: rgba(0, 51, 161, 0.5);
   animation: scan 4s ease-in-out infinite;
 }
 @keyframes scan {
@@ -93,8 +92,8 @@ html { scroll-behavior: smooth; }
 /* scroll progress bar */
 #scrollProgress {
   position: fixed; top: 0; left: 0; height: 3px; width: 0; z-index: 60;
-  background: linear-gradient(90deg, var(--accent), #ffb454);
-  box-shadow: 0 0 10px rgba(255, 107, 53, 0.6);
+  background: linear-gradient(90deg, #0033A1, #2D7DFF);
+  box-shadow: 0 0 10px rgba(0, 51, 161, 0.5);
   transition: width .08s linear;
 }
 
@@ -108,14 +107,15 @@ header nav a.nav-active { color: var(--accent); }
 .glass-panel:not(.no-lift):hover,
 .panel-solid:not(.no-lift):hover {
   transform: translateY(-5px);
-  box-shadow: 0 18px 40px -18px rgba(0, 0, 0, .7), 0 0 22px -10px rgba(255, 107, 53, .35);
+  box-shadow: 0 18px 40px -18px rgba(10, 35, 66, .28), 0 0 22px -10px rgba(0, 51, 161, .28);
+  border-color: rgba(0, 51, 161, 0.25);
 }
 
 /* hero HUD coordinate readout */
 .hero-hud {
   position: absolute; top: 7rem; right: 1.5rem; z-index: 10;
-  text-align: right; line-height: 1.5; opacity: .7;
-  border-right: 2px solid rgba(255, 107, 53, .4); padding-right: .75rem;
+  text-align: right; line-height: 1.5; opacity: .8;
+  border-right: 2px solid rgba(255, 255, 255, .4); padding-right: .75rem;
 }
 
 /* hero scroll cue */
@@ -127,8 +127,8 @@ header nav a.nav-active { color: var(--accent); }
 #toTop {
   position: fixed; bottom: 24px; right: 24px; z-index: 50;
   display: grid; place-items: center; width: 46px; height: 46px;
-  border: 1px solid rgba(192, 192, 192, .3); background: rgba(17, 34, 64, .85);
-  backdrop-filter: blur(8px); color: #e1e3e4;
+  border: 1px solid rgba(0, 51, 161, .25); background: rgba(255, 255, 255, .92);
+  backdrop-filter: blur(8px); color: #0A2342; box-shadow: 0 6px 18px -8px rgba(10, 35, 66, .35);
   opacity: 0; pointer-events: none; transform: translateY(10px);
   transition: opacity .3s, transform .3s, border-color .2s, color .2s;
 }
@@ -139,14 +139,14 @@ header nav a.nav-active { color: var(--accent); }
    Section rhythm / tonal layering (v3) - premium feel
    ============================================================ */
 
-/* near-black band (sits clearly darker than the navy base) */
-.tone-deep { background-color: #05090f; }
+/* cool light-blue band (alternates against the lighter base) */
+.tone-deep { background-color: #E4EAF3; }
 
-/* deep band with a faint orange ambient glow */
-.tone-glow { position: relative; background-color: #070d18; }
+/* light band with a faint blue ambient glow */
+.tone-glow { position: relative; background-color: #EAF0F8; }
 .tone-glow::before {
   content: ""; position: absolute; inset: 0; z-index: 0; pointer-events: none;
-  background: radial-gradient(55% 55% at 78% 18%, rgba(255, 107, 53, 0.12), transparent 70%);
+  background: radial-gradient(55% 55% at 78% 18%, rgba(0, 51, 161, 0.10), transparent 70%);
 }
 .tone-glow > * { position: relative; z-index: 1; }
 
@@ -155,13 +155,13 @@ header nav a.nav-active { color: var(--accent); }
 .seam-top::after {
   content: ""; position: absolute; top: 0; left: 50%; transform: translateX(-50%);
   width: min(100% - 2.5rem, 1440px); height: 1px;
-  background: linear-gradient(to right, transparent, rgba(192, 192, 192, 0.22), transparent);
+  background: linear-gradient(to right, transparent, rgba(0, 51, 161, 0.18), transparent);
 }
 
 /* numbered section index label */
 .sec-index { display: flex; align-items: center; gap: .75rem; margin-bottom: .9rem; }
-.sec-index .n { font-family: "JetBrains Mono", monospace; font-size: .9rem; color: rgba(255, 107, 53, .65); }
-.sec-index .bar { height: 1px; width: 2rem; background: rgba(255, 107, 53, .45); }
+.sec-index .n { font-family: "JetBrains Mono", monospace; font-size: .9rem; color: rgba(0, 51, 161, .6); }
+.sec-index .bar { height: 1px; width: 2rem; background: rgba(0, 51, 161, .45); }
 .sec-index .t { font-family: "JetBrains Mono", monospace; font-size: .75rem; letter-spacing: .15em; text-transform: uppercase; color: var(--accent); }
 
 /* full-bleed parallax image band */

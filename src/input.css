@@ -101,8 +101,8 @@ html { scroll-behavior: smooth; }
   transition: width .08s linear;
 }
 
-/* active nav link (scrollspy) */
-header nav a.nav-active { color: var(--accent); }
+/* active nav link (scrollspy) - white on the blue header */
+header nav a.nav-active { color: #fff; }
 
 /* gentle hover lift for content cards (opt out with .no-lift) */
 .glass-panel, .panel-solid {

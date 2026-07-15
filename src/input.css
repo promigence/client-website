@@ -124,6 +124,9 @@ main [class*="max-w-"]:not([class*="max-w-container"]) { margin-left: auto; marg
 /* section header rows (title + REF label): stack and center */
 main .flex.items-end.justify-between { flex-direction: column; align-items: center; justify-content: center; gap: .6rem; }
 
+/* fit-width badges inside flex-column cards (e.g. cert ID chips): center as items */
+main .flex-col > .w-fit, main .flex-col > .inline-flex { align-self: center; }
+
 /* ============================================================
    Additive enhancements (v2) - non-destructive
    ============================================================ */

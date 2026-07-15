@@ -131,7 +131,7 @@
       );
       if (note) note.hidden = false;
       window.location.href =
-        "mailto:inquiry@shivayuaerospace.com?subject=" + subject + "&body=" + body;
+        "mailto:sales@shivayuaerospace.com?subject=" + subject + "&body=" + body;
     });
   }
 })();

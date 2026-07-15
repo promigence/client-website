@@ -108,6 +108,23 @@ body {
 html { scroll-behavior: smooth; }
 
 /* ============================================================
+   Center-aligned content (client request): all page text centered.
+   Header nav keeps its row layout; scoped to main + footer.
+   ============================================================ */
+main, footer { text-align: center; }
+
+/* flex rows that were pinned left (bullet lists, icon+text rows, section labels) */
+main .sec-index { justify-content: center; }
+main li.flex { justify-content: center; }
+main .flex.items-start { justify-content: center; }
+
+/* narrow text blocks: center the block itself, not just the lines inside it */
+main [class*="max-w-"]:not([class*="max-w-container"]) { margin-left: auto; margin-right: auto; }
+
+/* section header rows (title + REF label): stack and center */
+main .flex.items-end.justify-between { flex-direction: column; align-items: center; justify-content: center; gap: .6rem; }
+
+/* ============================================================
    Additive enhancements (v2) - non-destructive
    ============================================================ */
 

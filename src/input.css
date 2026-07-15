@@ -10,7 +10,7 @@
 :root { --accent: #0033A1; }
 
 body {
-  background-color: #D9E6F7;
+  background-color: #C9DCF4;
   background-image: radial-gradient(circle at 1px 1px, rgba(0, 51, 161, 0.07) 1px, transparent 0);
   background-size: 32px 32px;
   color: #0A2342;
@@ -162,10 +162,10 @@ header nav a.nav-active { color: #fff; }
    ============================================================ */
 
 /* cool light-blue band (alternates against the lighter base) */
-.tone-deep { background-color: #C6D9F0; }
+.tone-deep { background-color: #B3CDEC; }
 
 /* light band with a faint blue ambient glow */
-.tone-glow { position: relative; background-color: #D0E0F4; }
+.tone-glow { position: relative; background-color: #BED5F0; }
 .tone-glow::before {
   content: ""; position: absolute; inset: 0; z-index: 0; pointer-events: none;
   background: radial-gradient(55% 55% at 78% 18%, rgba(0, 51, 161, 0.10), transparent 70%);

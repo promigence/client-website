@@ -7,13 +7,13 @@
    Design system: Boeing-style light theme (white + Boeing blue #0033A1)
    ============================================================ */
 
-:root { --accent: #0033A1; }
+:root { --accent: #0033A1; --sky: #82D4F6; }
 
 body {
-  background-color: #C9DCF4;
-  background-image: radial-gradient(circle at 1px 1px, rgba(0, 51, 161, 0.07) 1px, transparent 0);
+  background-color: #0A2240;
+  background-image: radial-gradient(circle at 1px 1px, rgba(255, 255, 255, 0.06) 1px, transparent 0);
   background-size: 32px 32px;
-  color: #0A2342;
+  color: #FFFFFF;
   font-family: "Inter", system-ui, sans-serif;
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
@@ -33,24 +33,24 @@ body {
 .tech-grid-overlay {
   position: fixed; inset: 0; pointer-events: none; z-index: 1;
   background-image:
-    linear-gradient(to right, rgba(0, 51, 161, 0.045) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(0, 51, 161, 0.045) 1px, transparent 1px);
+    linear-gradient(to right, rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
   background-size: 128px 128px;
 }
 
 /* surfaces */
 .glass-panel {
-  background: #FFFFFF;
-  border: 1px solid rgba(0, 51, 161, 0.12);
-  box-shadow: 0 1px 2px rgba(10, 35, 66, 0.05);
+  background: #113C65;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25);
 }
-.panel-solid { background: #FFFFFF; border: 1px solid rgba(0, 51, 161, 0.12); box-shadow: 0 1px 2px rgba(10, 35, 66, 0.05); }
+.panel-solid { background: #113C65; border: 1px solid rgba(255, 255, 255, 0.12); box-shadow: 0 1px 2px rgba(0, 0, 0, 0.25); }
 .input-dark {
-  background: #FFFFFF; border: 1px solid rgba(0, 51, 161, 0.22);
-  color: #0A2342; outline: none; transition: border-color .2s, box-shadow .2s;
+  background: rgba(255, 255, 255, 0.07); border: 1px solid rgba(255, 255, 255, 0.25);
+  color: #FFFFFF; outline: none; transition: border-color .2s, box-shadow .2s;
 }
-.input-dark::placeholder { color: #9AA8BD; }
-.input-dark:focus { border-color: var(--accent); box-shadow: 0 0 0 2px rgba(0, 51, 161, 0.18); }
+.input-dark::placeholder { color: #8FA6C4; }
+.input-dark:focus { border-color: var(--sky); box-shadow: 0 0 0 2px rgba(130, 212, 246, 0.25); }
 
 /* buttons */
 .btn-primary {
@@ -60,14 +60,14 @@ body {
 .btn-primary:hover { filter: brightness(1.08); transform: translateY(-1px); box-shadow: 0 8px 22px -8px rgba(0, 51, 161, .5); }
 .btn-primary:active { transform: scale(.98); }
 .btn-outline {
-  border: 1px solid rgba(0, 51, 161, 0.4); color: #0A2342; transition: all .2s;
+  border: 1px solid rgba(255, 255, 255, 0.4); color: #FFFFFF; transition: all .2s;
 }
-.btn-outline:hover { background: rgba(0, 51, 161, .06); border-color: var(--accent); color: var(--accent); }
+.btn-outline:hover { background: rgba(255, 255, 255, .08); border-color: var(--sky); color: var(--sky); }
 
 /* scanner line for the contact panel */
 .scan-line {
   position: absolute; top: 0; left: 0; width: 100%; height: 2px;
-  background: rgba(0, 51, 161, 0.5);
+  background: rgba(130, 212, 246, 0.5);
   animation: scan 4s ease-in-out infinite;
 }
 @keyframes scan {
@@ -129,8 +129,8 @@ header nav a.nav-active { color: #fff; }
 .glass-panel:not(.no-lift):hover,
 .panel-solid:not(.no-lift):hover {
   transform: translateY(-5px);
-  box-shadow: 0 18px 40px -18px rgba(10, 35, 66, .28), 0 0 22px -10px rgba(0, 51, 161, .28);
-  border-color: rgba(0, 51, 161, 0.25);
+  box-shadow: 0 18px 40px -18px rgba(0, 0, 0, .5), 0 0 22px -10px rgba(130, 212, 246, .25);
+  border-color: rgba(130, 212, 246, 0.35);
 }
 
 /* hero HUD coordinate readout */
@@ -149,26 +149,26 @@ header nav a.nav-active { color: #fff; }
 #toTop {
   position: fixed; bottom: 24px; right: 24px; z-index: 50;
   display: grid; place-items: center; width: 46px; height: 46px;
-  border: 1px solid rgba(0, 51, 161, .25); background: rgba(255, 255, 255, .92);
-  backdrop-filter: blur(8px); color: #0A2342; box-shadow: 0 6px 18px -8px rgba(10, 35, 66, .35);
+  border: 1px solid rgba(255, 255, 255, .3); background: rgba(10, 34, 64, .92);
+  backdrop-filter: blur(8px); color: #FFFFFF; box-shadow: 0 6px 18px -8px rgba(0, 0, 0, .5);
   opacity: 0; pointer-events: none; transform: translateY(10px);
   transition: opacity .3s, transform .3s, border-color .2s, color .2s;
 }
 #toTop.show { opacity: 1; pointer-events: auto; transform: none; }
-#toTop:hover { border-color: var(--accent); color: var(--accent); }
+#toTop:hover { border-color: var(--sky); color: var(--sky); }
 
 /* ============================================================
    Section rhythm / tonal layering (v3) - premium feel
    ============================================================ */
 
-/* cool light-blue band (alternates against the lighter base) */
-.tone-deep { background-color: #B3CDEC; }
+/* darker navy band (alternates against the navy base) */
+.tone-deep { background-color: #081A33; }
 
-/* light band with a faint blue ambient glow */
-.tone-glow { position: relative; background-color: #BED5F0; }
+/* navy band with a faint sky-blue ambient glow */
+.tone-glow { position: relative; background-color: #0D2A4D; }
 .tone-glow::before {
   content: ""; position: absolute; inset: 0; z-index: 0; pointer-events: none;
-  background: radial-gradient(55% 55% at 78% 18%, rgba(0, 51, 161, 0.10), transparent 70%);
+  background: radial-gradient(55% 55% at 78% 18%, rgba(130, 212, 246, 0.10), transparent 70%);
 }
 .tone-glow > * { position: relative; z-index: 1; }
 
@@ -177,14 +177,14 @@ header nav a.nav-active { color: #fff; }
 .seam-top::after {
   content: ""; position: absolute; top: 0; left: 50%; transform: translateX(-50%);
   width: min(100% - 2.5rem, 1440px); height: 1px;
-  background: linear-gradient(to right, transparent, rgba(0, 51, 161, 0.18), transparent);
+  background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.16), transparent);
 }
 
 /* numbered section index label */
 .sec-index { display: flex; align-items: center; gap: .75rem; margin-bottom: .9rem; }
-.sec-index .n { font-family: "JetBrains Mono", monospace; font-size: .9rem; color: rgba(0, 51, 161, .6); }
-.sec-index .bar { height: 1px; width: 2rem; background: rgba(0, 51, 161, .45); }
-.sec-index .t { font-family: "JetBrains Mono", monospace; font-size: .75rem; letter-spacing: .15em; text-transform: uppercase; color: var(--accent); }
+.sec-index .n { font-family: "JetBrains Mono", monospace; font-size: .9rem; color: rgba(130, 212, 246, .6); }
+.sec-index .bar { height: 1px; width: 2rem; background: rgba(130, 212, 246, .45); }
+.sec-index .t { font-family: "JetBrains Mono", monospace; font-size: .75rem; letter-spacing: .15em; text-transform: uppercase; color: var(--sky); }
 
 /* full-bleed parallax image band */
 .parallax-band { position: relative; overflow: hidden; }
